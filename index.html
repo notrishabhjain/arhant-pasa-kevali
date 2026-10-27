@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="अरहंत पासा केवली: विधि, मंगलाचरण, ध्यान, मन्त्र और पासा डालकर पुस्तक में लिखा फल हिन्दी या अंग्रेज़ी में पढ़ें। Arhant Pāsā Kevalī in Hindi and English.">
+<meta name="theme-color" content="#F2F1EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#13100D" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='10' fill='%23D8B78C'/%3E%3Ctext x='32' y='45' font-size='34' text-anchor='middle' fill='%2345270E' font-family='serif'%3E%E0%A4%85%3C/text%3E%3C/svg%3E">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Arhant Pāsā Kevalī</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap">
+<style>
+/* Layout: one pocket-book column (~36rem). The sandalwood die and its letter tiles are the single bold object; everything else stays quiet like a printed page. */
+:root{
+  --bg:#F2F1EC;
+  --surface:#FFFFFF;
+  --ink:#23180F;
+  --muted:#675B51;
+  --line:#E0DAD0;
+  --soft:#F8F3EA;
+  --kumkum:#A3202A;
+  --on-kumkum:#FFFFFF;
+  --kesar:#D2841A;
+  --chandan:#DCBC92;
+  --chandan-deep:#A97C4E;
+  --burn:#45270E;
+  --font-text:"Tiro Devanagari Hindi","Noto Serif Devanagari","Kohinoor Devanagari",Georgia,serif;
+  --font-ui:"Mukta","Noto Sans Devanagari","Kohinoor Devanagari",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#13100D;--surface:#1D1712;--ink:#F1E9DE;--muted:#A6988A;--line:#352B22;--soft:#241C15;
+    --kumkum:#E3666D;--on-kumkum:#1B0A0B;--kesar:#EBA84B;--chandan:#D2AF83;--chandan-deep:#97704A;--burn:#3A200C;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#13100D;--surface:#1D1712;--ink:#F1E9DE;--muted:#A6988A;--line:#352B22;--soft:#241C15;
+  --kumkum:#E3666D;--on-kumkum:#1B0A0B;--kesar:#EBA84B;--chandan:#D2AF83;--chandan-deep:#97704A;--burn:#3A200C;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-ui);font-size:17px;line-height:1.6;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+h1,h2,h3{font-family:var(--font-text);font-weight:400;line-height:1.25;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.1rem,8vw,2.9rem)}
+h2{font-size:1.7rem}
+h3{font-size:1.25rem}
+p{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--kesar);outline-offset:2px}
+
+/* header */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar-in{max-width:36rem;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:8px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.brand{font-family:var(--font-text);font-size:1.1rem;background:none;border:0;padding:6px 0;cursor:pointer;color:var(--ink);text-align:left;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lang{display:inline-flex;flex:none;border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--surface)}
+.lang button{border:0;background:transparent;color:var(--muted);font-weight:600;font-size:.92rem;padding:4px 14px;border-radius:999px;cursor:pointer;min-height:36px}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+
+/* page */
+main{max-width:36rem;margin:0 auto;padding-block:22px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.view{display:grid;gap:22px}
+.view > *{min-width:0}
+.eyebrow{font-size:.88rem;font-weight:600;letter-spacing:.05em;color:var(--kumkum)}
+.center{text-align:center}
+.muted{color:var(--muted)}
+.small{font-size:.95rem}
+.lede{font-family:var(--font-text);font-size:1.18rem;line-height:1.75}
+.dev{font-family:var(--font-text);font-size:1.25rem;color:var(--muted)}
+.scripture{font-family:var(--font-text);font-size:1.15rem;line-height:1.9}
+.src{font-size:.88rem;color:var(--muted)}
+.note{font-size:.95rem;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+.note.scr{font-family:var(--font-text);font-size:1.05rem;line-height:1.8}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px 20px;display:grid;gap:16px}
+
+/* buttons */
+.actions{display:grid;gap:10px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;min-height:52px;padding:10px 18px;border-radius:14px;border:1px solid transparent;font-weight:600;font-size:1.05rem;line-height:1.25;cursor:pointer;text-align:center}
+.btn-primary{background:var(--kumkum);color:var(--on-kumkum)}
+.btn-ghost{background:var(--surface);color:var(--ink);border-color:var(--line)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.link{background:none;border:0;color:var(--kumkum);font-weight:500;font-size:.98rem;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:10px 0;justify-self:center;text-align:center}
+.link.back{justify-self:start;text-decoration:none;font-weight:600}
+
+/* progress */
+.prog{display:grid;gap:8px}
+.prog-top{display:flex;justify-content:space-between;gap:12px;font-size:.92rem;color:var(--muted)}
+.prog-top b{color:var(--ink);font-weight:600}
+.prog-bar{display:grid;grid-template-columns:repeat(6,1fr);gap:4px}
+.prog-bar i{height:4px;border-radius:2px;background:var(--line)}
+.prog-bar i.on{background:var(--kesar)}
+
+/* preparation checklist */
+.checks{display:grid;border:1px solid var(--line);border-radius:18px;background:var(--surface);overflow:hidden}
+.checks label{display:grid;grid-template-columns:26px 1fr;gap:12px;align-items:start;padding:14px 16px;border-top:1px solid var(--line);cursor:pointer;font-family:var(--font-text);font-size:1.06rem;line-height:1.65}
+.checks label:first-child{border-top:0}
+.checks input{width:22px;height:22px;margin:4px 0 0;accent-color:var(--kumkum)}
+
+/* doha */
+.doha{display:grid;gap:20px}
+.couplet{display:grid;gap:4px;text-align:center}
+.couplet .v{font-family:var(--font-text);font-size:1.18rem;line-height:1.85}
+.couplet .tr{font-size:.95rem;color:var(--muted);line-height:1.55;margin-top:4px}
+
+/* meditation */
+.orb-wrap{display:grid;place-items:center;padding-block:8px}
+.orb{width:min(64vw,230px);max-width:100%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;
+  background:radial-gradient(circle at 50% 46%, color-mix(in srgb,var(--kesar) 34%,var(--surface)) 0%, color-mix(in srgb,var(--kesar) 14%,var(--bg)) 52%, var(--bg) 72%);
+  animation:breathe 9s ease-in-out infinite}
+.orb span{font-family:var(--font-text);font-size:2.3rem;color:var(--ink)}
+@keyframes breathe{0%,100%{transform:scale(.93)}50%{transform:scale(1.05)}}
+
+/* letter tiles: sandalwood with burnt letters */
+.tile{width:64px;height:64px;border-radius:10px;display:grid;place-items:center;font-family:var(--font-text);font-size:1.95rem;line-height:1;color:var(--burn);
+  background:repeating-linear-gradient(178deg, rgba(110,66,24,.12) 0 1px, transparent 1px 7px), linear-gradient(160deg,var(--chandan),var(--chandan-deep));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 2px 6px rgba(40,20,5,.18);text-shadow:0 1px 0 rgba(255,255,255,.28);border:0}
+.tile.empty{background:transparent;border:2px dashed var(--line);box-shadow:none;color:var(--muted);font-family:var(--font-ui);font-size:1rem;text-shadow:none}
+.tile.cur{border-color:var(--kesar);color:var(--kesar)}
+.tile.pop{animation:pop .5s ease-out}
+@keyframes pop{0%{transform:scale(.6)}70%{transform:scale(1.1)}100%{transform:scale(1)}}
+.slots,.combo{display:flex;gap:12px;justify-content:center}
+.combo .tile{width:72px;height:72px;font-size:2.2rem}
+.pick{display:grid;grid-template-columns:repeat(4,64px);gap:12px;justify-content:center}
+.tile-btn{cursor:pointer}
+
+/* the die: a long four-sided sandalwood bar */
+.stage{height:190px;display:grid;place-items:center;perspective:900px;position:relative}
+.tilt{transform-style:preserve-3d;transform:rotateX(-16deg) rotateY(-24deg)}
+.die{position:relative;width:184px;height:58px;transform-style:preserve-3d}
+.die.spin{animation:spin 18s linear infinite}
+@keyframes spin{from{transform:rotateX(0deg)}to{transform:rotateX(360deg)}}
+.face{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--font-text);font-size:2.1rem;line-height:1;color:var(--burn);border-radius:5px;backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  background:repeating-linear-gradient(179deg, rgba(110,66,24,.13) 0 1px, transparent 1px 6px), linear-gradient(170deg,var(--chandan),var(--chandan-deep));
+  box-shadow:inset 0 0 0 1px rgba(70,40,15,.22);text-shadow:0 1px 0 rgba(255,255,255,.25)}
+.f0{transform:rotateX(0deg) translateZ(29px)}
+.f1{transform:rotateX(-90deg) translateZ(29px)}
+.f2{transform:rotateX(-180deg) translateZ(29px)}
+.f3{transform:rotateX(-270deg) translateZ(29px)}
+.cap{position:absolute;top:0;left:63px;width:58px;height:58px;border-radius:5px;backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  background:radial-gradient(circle at 50% 50%, transparent 0 6px, rgba(90,52,18,.18) 6px 7px, transparent 7px 13px, rgba(90,52,18,.16) 13px 14px, transparent 14px), linear-gradient(160deg,var(--chandan-deep),var(--chandan))}
+.capL{transform:rotateY(-90deg) translateZ(92px)}
+.capR{transform:rotateY(90deg) translateZ(92px)}
+.shadow{position:absolute;bottom:30px;left:50%;width:180px;height:18px;margin-left:-90px;border-radius:50%;background:radial-gradient(ellipse at center, rgba(25,12,3,.30), transparent 70%);pointer-events:none}
+.landed{min-height:1.6em;text-align:center;font-family:var(--font-text);font-size:1.15rem}
+
+/* mantra */
+.mantra{font-family:var(--font-text);font-size:1.2rem;line-height:1.95;text-align:center}
+.translit{font-family:var(--font-text);font-style:italic;color:var(--muted);text-align:center;font-size:1rem;line-height:1.7}
+.instr{text-align:center;font-family:var(--font-text);color:var(--muted)}
+.beads{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.beads i{width:22px;height:22px;border-radius:50%;border:2px solid var(--chandan-deep);transition:background-color .2s,transform .2s}
+.beads i.on{background:var(--kesar);border-color:var(--kesar);transform:scale(1.08)}
+
+/* choice */
+.choice{display:grid;gap:4px;text-align:left;padding:18px;border-radius:16px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.choice strong{font-family:var(--font-text);font-size:1.3rem;font-weight:400}
+.choice span{color:var(--muted);font-size:.98rem}
+
+/* result */
+.fal{font-family:var(--font-text);font-size:1.17rem;line-height:1.95}
+.fal b{color:var(--kumkum);font-weight:700}
+.orig{border-top:1px solid var(--line);padding-top:6px}
+.orig summary{cursor:pointer;font-weight:600;color:var(--kumkum);min-height:44px;display:flex;align-items:center}
+.orig .fal{margin-top:6px}
+.closing{display:grid;gap:6px;text-align:center;padding-top:6px}
+.closing .v{font-family:var(--font-text);font-size:1.12rem;line-height:1.85}
+.closing .tr{font-size:.95rem;color:var(--muted)}
+
+/* index */
+.pk{display:grid;gap:10px;padding-top:6px}
+.pk-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.chip{min-height:58px;border-radius:12px;border:1px solid var(--line);background:var(--surface);font-family:var(--font-text);font-size:1.12rem;cursor:pointer;display:grid;place-items:center;align-content:center;padding:6px 2px;line-height:1.2}
+.chip small{font-family:var(--font-ui);font-size:.68rem;color:var(--muted);line-height:1.2}
+.chip.missing{border-style:dashed;background:transparent;color:var(--muted)}
+
+@media (max-width:380px){
+  .tile{width:58px;height:58px}
+  .pick{grid-template-columns:repeat(4,58px)}
+  .row2{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion: reduce){
+  .orb,.die.spin,.tile.pop{animation:none}
+}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="bar-in">
+    <button class="brand" id="brand" data-act="home"></button>
+    <div class="lang" role="group" aria-label="भाषा / Language">
+      <button id="langHi" data-act="lang" data-v="hi" lang="hi">हिन्दी</button>
+      <button id="langEn" data-act="lang" data-v="en" lang="en">English</button>
+    </div>
+  </div>
+</header>
+<main id="app" aria-live="polite"></main>
+
+<script>
+/* ---------- Source text: pages 445–461 of the book ---------- */
+const LET = {a:'अ', r:'र', h:'हं', t:'त'};
+const LAT = {a:'A', r:'Ra', h:'Haṃ', t:'Ta'};
+const ORDER = ['a','r','h','t'];
+
+const INTRO = {
+  hi: [
+    `प्रत्येक व्यक्ति के मन में अपना भविष्य जानने की प्रबल इच्छा होती है और इसके लिए वह जन्म कुण्डली, हस्तरेखा या अन्य उपायों द्वारा भविष्य जानने के लिए प्रयत्न शील रहता है। इसी इच्छा की पूर्ति के लिए श्री पंडित वृन्दावन जी काशी निवासी रचित अरहंत पासा केवली यहाँ दी जा रही है। अत्यन्त शुद्धिपूर्वक, श्रद्धा सहित, बताई हुई विधि के अनुसार कार्य करके इसके द्वारा अपने भवितव्य की झाँकी का ज्ञान प्राप्त किया जा सकता है।`,
+    `पासा केवली से शुभाशुभ देखने के लिए पवित्रता, मन में शान्ति एवं श्रद्धा होना आवश्यक है। प्रातःकाल स्नानादि क्रियाओं से स्वच्छ होकर स्वच्छ वस्त्र पहिन कर किसी पाटे, चौकी पर पुस्तक को रखकर, पूर्व या उत्तर दिशा की ओर मुँह करके पद्मासन या अर्द्धपद्मासन से बैठें। उस समय सीधा स्वर चल रहा हो इसका भी ध्यान रखा जाए। फिर अपने मन में प्रश्न का विचार करें और श्री अरहंत प्रभु का ध्यान करते हुए पुस्तक में लिखे मन्त्रों का उच्चारण कर तीन बार पासा डालना चाहिये। प्रत्येक बार जो वर्ण पासा के ऊपर की ओर आये उसे लिख लेना चाहिए। इस प्रकार तीन बार में तीन वर्ण आयेंगे उनका फल पुस्तक में देखकर विश्वास करना चाहिए और उसी के अनुसार आचरण करना चाहिए।`
+  ],
+  en: [
+    `Every person has a strong desire in the mind to know their future, and for this they keep trying to know the future through the birth chart, the lines of the palm or other means. To fulfil this very desire, the Arhant Pāsā Kevalī composed by Shri Pandit Vrindavan ji, resident of Kashi, is given here. By acting with complete purity and with faith, according to the method described, one can gain through it a glimpse of one's destiny.`,
+    `To see auspicious and inauspicious outcomes with the Pāsā Kevalī, purity, peace in the mind and faith are necessary. In the early morning, having become clean through bathing and other routines, put on clean clothes, place the book on a pāṭā or chaukī (low wooden seat or stool), face east or north, and sit in padmāsana or ardha-padmāsana. Care should also be taken that the sīdhā svara (the breath through the right nostril) is flowing at that time. Then think of the question in your mind and, meditating on Shri Arhant Prabhu, recite the mantras written in the book and throw the die three times. Each time, the letter that comes on the upper side of the die should be written down. In this way three letters will come in three throws; their result should be seen in the book and believed, and one should conduct oneself accordingly.`
+  ]
+};
+
+const PREP_LEAD = {
+  hi: `पासा केवली से शुभाशुभ देखने के लिए पवित्रता, मन में शान्ति एवं श्रद्धा होना आवश्यक है।`,
+  en: `To see auspicious and inauspicious outcomes with the Pāsā Kevalī, purity, peace in the mind and faith are necessary.`
+};
+const PREP = {
+  hi: [
+    `पवित्रता, मन में शान्ति एवं श्रद्धा`,
+    `प्रातःकाल स्नानादि क्रियाओं से स्वच्छ होकर स्वच्छ वस्त्र पहिन कर`,
+    `किसी पाटे, चौकी पर पुस्तक को रखकर`,
+    `पूर्व या उत्तर दिशा की ओर मुँह करके`,
+    `पद्मासन या अर्द्धपद्मासन से बैठें`,
+    `उस समय सीधा स्वर चल रहा हो इसका भी ध्यान रखा जाए`
+  ],
+  en: [
+    `Purity, peace in the mind and faith`,
+    `In the early morning, clean after bathing and other routines, wearing clean clothes`,
+    `With the book placed on a pāṭā or chaukī (low wooden seat or stool)`,
+    `Facing east or north`,
+    `Sit in padmāsana or ardha-padmāsana`,
+    `Take care that the sīdhā svara (breath through the right nostril) is flowing at that time`
+  ]
+};
+
+const DOHA = [
+  {hi:[`श्रीमत वीर जिनेश पद, वन्दों शीश नवाय।`,`गुरु गौतम के चरण नमि, नमों शारदा माय॥`],
+   en:`Bowing my head, I worship the feet of the revered Vīr Jinesh (Lord Mahāvīr). Bowing at the feet of Guru Gautam, I bow to Mother Śāradā.`},
+  {hi:[`श्रेणिक नृप के पुण्यतें, भाषी गणधर देव।`,`जगत हेत अरहंत यह, नाम केवली सेव॥`],
+   en:`Through the merit of King Śreṇik, the Gaṇadhar Dev spoke it. For the good of the world is this Arhant; serve it, by the name Kevalī.`},
+  {hi:[`चन्दन के पासा विषै, चारों ओर सुजान।`,`एक एक अक्षर लिखो, श्री अ र हं त विधान॥`],
+   en:`On a die of sandalwood, on its four sides, O wise one, write one letter each: the method of Shri A Ra Haṃ Ta.`},
+  {hi:[`तीन बार डारो तब, करि वर मन्त्र उचार।`,`जो अक्षर पासा कहैं, ताको करो विचार॥`],
+   en:`Then throw it three times, having uttered the excellent mantra. Whatever letters the die tells, reflect upon them.`},
+  {hi:[`तीन मन्त्र हैं तासु के, सात-सात ही बार।`,`थिर ह्वै पासा डालियो, करिके शुद्ध उच्चार॥`],
+   en:`Its mantras are three, each seven times. Becoming steady, throw the die, after pronouncing them purely.`},
+  {hi:[`जानि शुभाशुभ तासुतैं, फल निज हृदय नियोग।`,`मन प्रसन्न ह्वै सुमरियो, प्रभु पद सेवहु जोग॥`],
+   en:`Knowing the auspicious and inauspicious from it, apply the result to your own heart. With a joyful mind remember [the Lord], and serve the Lord's feet as is fitting.`}
+];
+
+const MANTRAS = [
+  {hi:`ॐ ह्रीं श्रीं बाहुबलि लंब बाहु ओं क्षीं क्षूं क्षें क्षैं क्षं क्षः उद्धर्वभुजा कुरु कुरु शुभाशुभं कथय कथय भूत-भविष्यत-वर्तमानं दर्शय दर्शय सत्यं ब्रूहि सत्यं ब्रूहि स्वाहा।`,
+   tr:`Oṃ hrīṃ śrīṃ bāhubali lamba bāhu oṃ kṣīṃ kṣūṃ kṣeṃ kṣaiṃ kṣaṃ kṣaḥ uddharvabhujā kuru kuru śubhāśubhaṃ kathaya kathaya bhūta-bhaviṣyat-vartamānaṃ darśaya darśaya satyaṃ brūhi satyaṃ brūhi svāhā.`,
+   note:{hi:`(यह प्रथम मन्त्र सात बार जप कर पासा डालना)`, en:`(Chant this first mantra seven times and throw the die.)`}, p:'446'},
+  {hi:`ॐ हः ओं सः ओं क्षः सत्यं वद सत्यं वद स्वाहा।`,
+   tr:`Oṃ haḥ oṃ saḥ oṃ kṣaḥ satyaṃ vada satyaṃ vada svāhā.`,
+   note:{hi:`(दूसरा मन्त्र भी सात बार जपकर पासा डालना)`, en:`(Chant the second mantra also seven times and throw the die.)`}, p:'446'},
+  {hi:`ॐ ह्रीं श्रीं विश्वमालिनि, विश्व-प्रकाशिनि अमोघवादिनि सत्यं ब्रूहि सत्यं ब्रूहि एह्येहि विश्वमालिनी स्वाहा।`,
+   tr:`Oṃ hrīṃ śrīṃ viśvamālini, viśva-prakāśini amoghavādini satyaṃ brūhi satyaṃ brūhi ehyehi viśvamālinī svāhā.`,
+   note:{hi:`(यह भी सात बार पढ़कर पासा डालना)`, en:`(Recite this one too seven times and throw the die.)`}, p:'447'}
+];
+
+const NAMOKAR = {
+  hi:`णमो अरिहंताणं। णमो सिद्धाणं। णमो आइरियाणं। णमो उवज्झायाणं। णमो लोए सव्व साहूणं॥`,
+  tr:`Ṇamo arihaṃtāṇaṃ. Ṇamo siddhāṇaṃ. Ṇamo āiriyāṇaṃ. Ṇamo uvajjhāyāṇaṃ. Ṇamo loe savva sāhūṇaṃ.`
+};
+
+const FOOT = {
+  hi:`*यदि मन्त्र के उच्चारण में कठिनाई हो तो णमोकार मन्त्र को बोलकर भी पासा डाला जा सकता है।`,
+  en:`*If there is difficulty in pronouncing the mantras, the die may also be thrown after saying the Ṇamokār Mantra.`
+};
+
+const DHYAN = {
+  hi:`फिर अपने मन में प्रश्न का विचार करें और श्री अरहंत प्रभु का ध्यान करते हुए पुस्तक में लिखे मन्त्रों का उच्चारण कर तीन बार पासा डालना चाहिये।`,
+  en:`Then think of the question in your mind and, meditating on Shri Arhant Prabhu, recite the mantras written in the book and throw the die three times.`
+};
+
+const NOTE447 = {
+  hi:`नोट–मन एकत्र कर, विनय सहित अभिप्राय विचार कर श्री अरहंत भगवान के नाम के अक्षरों (अ, र, हं, त) का पासा तीन बार डालना चाहिए। जो जो अक्षर पड़ें, उनको मिलाकर उनका फल जानना चाहिए। जिन मार्ग में यह बड़ा निमित्त है। (वृन्दावन)`,
+  en:`Note: Gathering the mind, with humility, reflecting on your intention, throw three times the die bearing the letters of the name of Shri Arhant Bhagavān (A, Ra, Haṃ, Ta). Whatever letters fall, combine them and know their result. On the Jina path this is a great nimitta (sign). (Vrindavan)`
+};
+
+const WRITE = {
+  hi:`प्रत्येक बार जो वर्ण पासा के ऊपर की ओर आये उसे लिख लेना चाहिए।`,
+  en:`Each time, the letter that comes on the upper side of the die should be written down.`
+};
+const COMBINE = {
+  hi:`जो जो अक्षर पड़ें, उनको मिलाकर उनका फल जानना चाहिए।`,
+  en:`Whatever letters fall, combine them and know their result.`
+};
+
+const PK = [
+  {hi:`अथ अकरादि प्रथम प्रकरण`, en:`First chapter: beginning with A`, p:'447–451'},
+  {hi:`अथ रकारादि द्वितीय प्रकरण`, en:`Second chapter: beginning with Ra`, p:'451–454'},
+  {hi:`अथ हंकारादि तृतीय प्रकरण`, en:`Third chapter: beginning with Haṃ`, p:'454–457'},
+  {hi:`अथ तकरादि चतुर्थ प्रकरण`, en:`Fourth chapter: beginning with Ta`, p:'458–461'}
+];
+
+/* Results: Hindi exactly as printed; English is a close translation. */
+const R = {
+  aaa:{p:'447',
+    hi:`यदि ये तीन अक्षर पड़ें, सुख और कल्याण मंगल हो, सम्मान बढ़े, लक्ष्मी की प्राप्ति हो, व्यापार में तथा विदेश में धन लाभ हो, युद्ध में जीत हो, राज दरबार में सम्मान मिले, सब संकट, रोग, शोक, दरिद्रता का नाश हो। सब प्रकार के कल्याण हो। यह निःसन्देह विश्वास करना चाहिए।`,
+    en:`If these three letters fall, there will be happiness, welfare and auspiciousness; honour will increase; Lakshmi (wealth) will be obtained; there will be gain of wealth in trade and abroad; there will be victory in war; honour will be received in the royal court; all troubles, disease, grief and poverty will be destroyed. There will be welfare of every kind. This should be believed without doubt.`},
+  aar:{p:'447',
+    hi:`इन तीनों का फल मध्यम होता है। मन का विचारा हुआ, पूर्व पाप के कारण बाधा पड़ने से शीघ्र सफल नहीं होगा। इसलिए मनवांछित फल प्राप्त करने के लिए अपने इष्टदेव श्री अरहंत वीतराग भगवान की आराधना करनी चाहिए। इससे कुछ समय बाद इच्छित फल की प्राप्ति होगी।`,
+    en:`The result of these three is medium. What you have thought of in your mind will not succeed soon, because obstacles arise due to past sins. Therefore, to obtain the result your mind desires, you should worship your chosen deity (iṣṭadeva), Shri Arhant Vītarāga Bhagavān. Through this, the desired result will be obtained after some time.`},
+  aah:{p:'447–448',
+    hi:`इनका फल शुभ होता है। धन-धान्य का समागम होगा। परदेश गमन से इच्छित फल की प्राप्ति होगी। भाई-बन्धु से प्रेम भाव बढ़ेगा। शत्रुओं का दमन होगा। सम्पूर्ण बाधाएँ दूर होंगी। घरमें पुण्य के प्रभाव से सब प्रकार का मंगल होगा। हे प्रश्नकर्ता ! तुम्हारा विचारा हुआ शुभ है। अतः शुभ फल की निश्चित प्राप्ति होगी।`,
+    en:`Their result is auspicious. There will be an accumulation of wealth and grain. By travelling abroad the desired result will be obtained. Love with brothers and kin will grow. Enemies will be subdued. All obstacles will be removed. In the home, through the influence of merit (puṇya), there will be auspiciousness of every kind. O questioner! What you have thought of is auspicious. Therefore the auspicious result will certainly be obtained.`},
+  aat:{p:'448',
+    hi:`हे दयालु ! तेरा प्रश्न शुभ है। तेरे घर में पुत्र-पौत्रादि का सुख होगा, हितैषी मित्रों से लाभ होगा। सब प्रकार के रोगादि से छुटकारा होगा। खोटे ग्रह दूर होंगे। परदेश में गए हुए भाई और मित्रों का शुभ मिलन होगा। कुल की बढ़वारी होगी, सज्जनों से मित्रता होगी। तेरे आगामी दिन सुख और सौभाग्य को देने वाले होंगे। तू वीतराग भगवान का सदा ध्यान किया कर।`,
+    en:`O compassionate one! Your question is auspicious. In your home there will be the happiness of sons, grandsons and so on; there will be gain from well-wishing friends. There will be freedom from every kind of disease and the like. Malefic planets will go away. There will be an auspicious meeting with brothers and friends who have gone abroad. The family will flourish; there will be friendship with good people. Your coming days will give happiness and good fortune. Always meditate on the Vītarāga Bhagavān.`},
+  ara:{p:'448',
+    hi:`तेरा विचार श्रेष्ठ है, उत्तम फल का देने वाला है, प्रतिदिन आनन्द की वृद्धि होगी। पाप के उदय से तेरा नष्ट हुआ धन फिर मिलेगा, राजा द्वारा सम्मान होगा, भाई-बन्धुओं से मिलाप होगा। हर प्रकार से तेरी गृहस्थी सुखी होगी। अब तेरे सब पापों का अन्त हो गया है। इसलिए धर्म के प्रभाव से सुख समृद्धि का वास होगा। तू अपने कर्त्तव्य कर्म में विश्वास पूर्वक लगा रह।`,
+    en:`Your thought is excellent and gives the best result; joy will increase day by day. The wealth you lost through the rising of sin will be found again; you will be honoured by the king; you will be reunited with brothers and kin. Your household will be happy in every way. Now all your sins have come to an end. Therefore, through the influence of dharma, happiness and prosperity will dwell with you. Keep engaged in your duties with faith.`},
+  arr:{p:'448',
+    hi:`हे भाई ! तेरा पुण्य बलवान है। तुझे धन का लाभ होगा। सब स्थानों में यश बढ़ेगा, जहाँ भी जाएगा सम्मान पायेगा और सब तेरे शुभ-चिन्तक हो जावेंगे। जल, अग्नि मरी आदि उपद्रव तेरा कुछ भी बिगाड़ नहीं कर सकेंगे। शत्रु वश में होंगे, सब प्रकार के सुख की प्राप्ति होगी। यह सब तेरे धर्म का प्रभाव है। इसलिए तू धर्म का पालन मत छोड़ना, बस तेरा भविष्य सुखमय है।`,
+    en:`O brother! Your merit (puṇya) is strong. You will gain wealth. Your fame will grow in all places; wherever you go you will receive honour, and all will become your well-wishers. Calamities such as water, fire and epidemic will not be able to harm you at all. Enemies will be under your control; you will obtain happiness of every kind. All this is the influence of your dharma. Therefore do not give up practising dharma; your future is simply full of happiness.`},
+  arh:{p:'448–449', label:'अ, र, ह',
+    hi:`ये तीनों वर्ण सौभाग्य सम्पत्ति के सूचक हैं। तेरा जो मनोरथ है वह सरलता से फलित होगा। जो घर में थोड़ा सा क्लेश है, उसकी चिन्ता न कर। इसके लिए तू श्री महावीर प्रभु की पूजा कर, तेरे सब विघ्न दूर होंगे। मन की चिन्ता दूर कर मन को एकाग्र कर, तुझे सब सुखों की प्राप्ति होगी। श्री अरहंत का ध्यान कर, तुझको सब सिद्धियाँ प्राप्त होंगी।`,
+    en:`These three letters indicate good fortune and wealth. Whatever wish you have will bear fruit easily. Do not worry about the little strife there is in the home. For this, worship Shri Mahāvīr Prabhu, and all your obstacles will be removed. Remove the worry of the mind and make the mind one-pointed, and you will obtain all happiness. Meditate on Shri Arhant, and you will obtain all accomplishments (siddhis).`},
+  art:{p:'449',
+    hi:`इन तीनों वर्णों के आने पर सब सुखों की प्राप्ति होती है। तुझे स्त्री, पुत्र और पश्चात् पौत्र का भी लाभ होगा। तेरे कुल की शोभा होगी। तुम जहाँ भी जाओगे, वहीं तुम्हारी कीर्ति बढ़ेगी। संसार तुम्हें प्यार करेगा। तुम्हारा प्रश्न शुभ है, तुम्हारे मन में प्रभु का ध्यान होना चाहिए। देखो, तुम्हारे ललाट पर तिल का चिह्न होना चाहिए।`,
+    en:`When these three letters come, all happiness is obtained. You will gain a wife, a son and afterwards a grandson too. Your family will be adorned with glory. Wherever you go, there your fame will grow. The world will love you. Your question is auspicious; the Lord should be in your mind in meditation. Look, there should be the mark of a mole (til) on your forehead.`},
+  aha:{p:'449',
+    hi:`हे प्रश्नकर्त्ता ! सुनो। पहले तुम्हें कुछ कष्ट होगा, परन्तु शीघ्र ही वह दुःख दूर होगा और दिन-प्रतिदिन धन की बढ़वारी होगी, सज्जनों की संगति होगी। हे विचारक ! तुमने जो सोचा है सो सब सफल होगा। तुम महावीर भगवान के नाम की तीनों (प्रातः, मध्याह्न, सायंकाल) समय एक एक माला फेरा करो।`,
+    en:`O questioner! Listen. At first you will have some trouble, but that sorrow will soon go away, and day by day your wealth will grow; you will have the company of good people. O thinker! Whatever you have thought of will all succeed. At all three times (morning, midday, evening), turn one mālā (rosary) each of the name of Mahāvīr Bhagavān.`},
+  ahr:{p:'449',
+    hi:`जब यह तीनों अक्षर आवें तब धन-लाभ यश लाभ पृथ्वी का लाभ हो। राजा, भाई आदि आदर करें। बिछुड़े हुए भाई इष्टजनों, धनादि का लाभ हो। हे भाई ! तुम धैर्य धारण करो। तुम्हें व्यापार में, परदेश में, सब प्रकार सुख-लाभ होगा। तुम मन का संशय दूर करो, और सर्व विघ्न विनाशक श्री पार्श्व प्रभु का स्मरण करो।`,
+    en:`When these three letters come, there is gain of wealth, gain of fame and gain of land. The king, brothers and others will show respect. There will be gain of separated brothers, loved ones, wealth and so on. O brother! Keep patience. You will have happiness and gain of every kind in business and abroad. Remove the doubt from your mind, and remember Shri Pārśva Prabhu, the destroyer of all obstacles.`},
+  ahh:{p:'449–450',
+    hi:`ये तीनों अक्षर मिलने पर इष्टसिद्धि कठिन होती है। हे भाई ! तेरा कार्य मुश्किल से ही सिद्ध होगा। तेरा वर्तमान धन भी नष्ट होता नजर होता है, क्लेश बढ़ेगा, व्यापार में हानि होगी। परदेश में भी सिद्धि नहीं। इसलिए हे सज्जन ! तू भगवान की पूजा भक्ति कर। जपदान होम कर। 41 दिन तक स्नान कर शुद्ध वस्त्र पहन कर प्रातः सायंकाल श्री पार्श्वनाथ भगवान के नाम की 50 हजार जाप दे। इसके बाद तेरा पुण्य उदय आवेगा और इच्छित फल की प्राप्ति होगी।`,
+    en:`When these three letters come together, attaining what is desired is difficult. O brother! Your work will be accomplished only with difficulty. Even your present wealth appears to be getting destroyed; strife will grow; there will be loss in business. Abroad too there is no success. Therefore, O good person! Do worship and devotion of the Lord. Perform japa, charity and homa. For 41 days, having bathed and put on pure clothes, morning and evening, do 50 thousand japa of the name of Shri Pārśvanātha Bhagavān. After this your merit will rise and the desired result will be obtained.`},
+  aht:{p:'450',
+    hi:`इन अक्षरों का मिलाप सब प्रकार के कल्याण और आनन्द की देने वाला है। इसलिए हे सज्जन ! तुझे आज्ञाकारी पुत्र और भाईयों का समागम होगा। तुझे तेरे उद्योग में धन, धान्य और सम्पत्ति मिलेगी। युद्ध में तेरी विजय निश्चित है। अगर तू या तेरा सम्बन्धी बन्धन में होगा तो छुटकारा पावेगा। इसलिये हे बुद्धिमान! तू संदेह छोड़। तेरा सब प्रकार कल्याण होगा।`,
+    en:`The combination of these letters gives welfare and joy of every kind. Therefore, O good person! You will have the company of an obedient son and of brothers. In your enterprise you will obtain wealth, grain and property. Your victory in war is certain. If you or your relative is in bondage, there will be release. Therefore, O wise one! Give up doubt. You will have welfare of every kind.`},
+  ata:{p:'450',
+    hi:`ये वर्ण तेरे कल्याण मंगल के बताने वाले हैं। तुझे तेरे प्रयत्नों से लक्ष्मी की प्राप्ति होगी, सब विघ्न-बाधाओं को दूर करता हुआ, पुत्र पौत्रादि के सुखको प्राप्त करेगा और इच्छित मणि मुक्तादि का लाभ होगा। आज से आठवें दिन तेरा भाग्य और भी अधिक श्रेष्ठ फल को देने वाला होगा।`,
+    en:`These letters tell of your welfare and auspiciousness. Through your own efforts you will obtain Lakshmi; removing all obstacles and hindrances, you will attain the happiness of sons, grandsons and so on, and you will gain the gems, pearls and the like that you desire. On the eighth day from today your fortune will give an even more excellent result.`},
+  atr:{p:'450',
+    hi:`हे सज्जन ! तेरे शुभ दिन हैं। तुझे सब मंगल के सामान मिलेंगे। तेरे घर पर आनन्द के बाजे बजेंगे। तुझे जो प्यारे बन्धुओं की चिन्ता सता रही है, यह दूर होगी। वे धन-धान्य से भरे हुए हाथी घोड़ों के साथ सुख पूर्वक तेरे से मिलेंगे। तू अपने हृदय की चिन्ता दूर कर। अब तेरे सुख के दिन हैं।`,
+    en:`O good person! These are your auspicious days. You will receive all the things of auspiciousness. Music of joy will play at your home. The worry about your dear kinsmen that is troubling you will go away. Full of wealth and grain, with elephants and horses, they will meet you happily. Remove the worry from your heart. Now are your days of happiness.`},
+  ath:{p:'450–451',
+    hi:`हे बन्धु ! तेरा अशुभ का उदय है, कहीं लाभ दिखाई नहीं देता। अभी तो तेरा हाथ का धन और जाता दिखता है। तेरे शुभ चिन्तक भाई, बन्धु, स्त्री, पुत्र, सम्पत्ति आदि का अनिष्ट ही दिखाई पड़ता है और चारों ओर शत्रु ही शत्रु भरे पड़े हैं। इसलिए इन विघ्नों को दूर करने के लिए तू 61 दिन तक "ओं ह्रीं अ, सि, आ, उ, सा, सर्वविघ्न विनाशनाय नमः स्वाहा।" इस मन्त्र की नित्य शुद्ध होकर 11-11 मालाओं से जाप दे, तेरा विघ्न दूर होगा और घर में मंगलाचार होगा।`,
+    en:`O kinsman! Your inauspicious karma is rising; gain is seen nowhere. For now, even the wealth in your hand appears to be going. Only harm appears for your well-wishing brothers, kin, wife, son, property and so on, and on all four sides there are enemies upon enemies. Therefore, to remove these obstacles, for 61 days, becoming pure daily, do japa of this mantra, "ओं ह्रीं अ, सि, आ, उ, सा, सर्वविघ्न विनाशनाय नमः स्वाहा।" (Oṃ hrīṃ a si ā u sā sarvavighna vināśanāya namaḥ svāhā), with 11 mālās each day; your obstacles will be removed and there will be auspicious celebration in the home.`},
+  att:{p:'451',
+    hi:`हे भव्य जीव ! तुझे धन लाभ होगा सम्पत्ति बढ़ेगी, सुख का विस्तार होगा। सब इच्छाएँ पूर्ण होंगी। प्रिय बन्धु और मित्रों का मिलाप होगा, दिन-दिन लाभ ही बढ़ेगा तू जिस तरफ भी ध्यान देगा सब तरफ सफलता ही मिलेगी। युद्ध में, वाद-विवाद में तेरी विजय होगी। तू सन्देह मत कर। तू अपना पुण्य उदय समझ कर धीरज से कार्य कर, सफलता तेरे चरणों में हैं।`,
+    en:`O bhavya soul! You will gain wealth, your property will grow, your happiness will expand. All wishes will be fulfilled. You will meet dear kin and friends; gain alone will grow day by day; whichever way you turn your attention, you will find only success on every side. You will be victorious in war and in disputes. Do not doubt. Understanding that your merit is rising, work with patience; success is at your feet.`},
+
+  raa:{p:'451',
+    hi:`इन अक्षरों के पड़ने से धन, सम्पत्ति का और सज्जनों से मिलाप होता है। सोना, चाँदी, वस्त्र, गहने, नाना प्रकार के रत्न आदि इच्छित पदार्थों की प्राप्ति अवश्य होगी। रात्रि के अन्त में हाथी, घोड़े या रथ में चढ़े हुए फलों की माला पहने हुए देवताओं का विमान में बैठे हुए सपना दिखाई देगा।`,
+    en:`When these letters fall, there is a meeting with wealth and property and with good people. Desired things such as gold, silver, clothes, ornaments and many kinds of gems will certainly be obtained. At the end of the night you will see a dream of gods mounted on elephants, horses or chariots, wearing garlands of fruits, seated in a vimāna (celestial vehicle).`},
+  rar:{p:'451',
+    hi:`हे पृच्छक ! तुझे इच्छित फल की प्राप्ति होगी। तुम्हें व्यापार और खेती में लाभ होगा। तुमसे देश और उनके निवासियों को लाभ पहुँचेगा, तुम्हें परदेश में लाभ होगा। तुम्हारे घर में सुख रहेगा। भयानक युद्ध में कुलदेवी तुम्हारी रक्षा करेगी और सब प्रकार सुख का विस्तार होगा।`,
+    en:`O enquirer! You will obtain the desired result. You will gain in trade and farming. Through you, the country and its people will benefit; you will gain abroad. Happiness will remain in your home. In a terrible war the family goddess (kuladevī) will protect you, and happiness of every kind will expand.`},
+  rah:{p:'452',
+    hi:`हे भ्राता ! तुम्हारे विचारे कार्य में लाभ की आशा नहीं। तुम्हें दुःख, धन का नाश, शारीरिक कष्ट होगा, तुम्हारे भाई बन्धुओं का वियोग होगा। विदेश में भी तुम्हें सफलता प्राप्त न होगी। इसलिए शान्ति से अपने स्थान पर रहते हुए ही श्री जिनेन्द्रदेव की सेवा पूजा भक्ति आदि करो। इसके लिए अगर 21 दिन तक ब्रह्मचर्य का पालन करते हुए एक बार भोजन कर स्नान आदि क्रियाओं से शुद्ध होकर ॐ ह्रीं, अ, सि, आ, उ, सा नमः इस मन्त्र का सवा लाख जाप करो तो तुम्हारे सब संकट दूर होकर सुख सम्पत्ति की प्राप्ति होगी।`,
+    en:`O brother! There is no hope of gain in the work you have thought of. You will have sorrow, loss of wealth and bodily suffering; there will be separation from your brothers and kin. Abroad too you will not find success. Therefore, staying peacefully in your own place, do service, worship, devotion and so on of Shri Jinendra Deva. For this, if for 21 days, observing celibacy (brahmacarya), eating once a day and becoming pure through bathing and other routines, you do one and a quarter lakh (125,000) japa of this mantra, ॐ ह्रीं, अ, सि, आ, उ, सा नमः (Oṃ hrīṃ a si ā u sā namaḥ), then all your troubles will be removed and you will obtain happiness and wealth.`},
+  rat:{p:'452',
+    hi:`हे सज्जन ! तुम्हारा अशुभ का उदय है। चोरों द्वारा धन का चुराना, नाव में डूब जाना, आग लगना, रोग होना आदि से अशुभ होगा। तुम्हारा किया हुआ सब उल्टा होगा, इसे कर्मों का फल समझकर तुम्हें शोक न करना चाहिए और शान्ति से भगवान का स्मरण करते हुए परोपकार की भावना से कार्य करो। कुछ समय बाद सफलता मिलेगी।`,
+    en:`O good person! Your inauspicious karma is rising. There will be misfortune through wealth being stolen by thieves, drowning in a boat, fire breaking out, illness and so on. Everything you do will turn out the opposite. Understanding this as the fruit of karma, you should not grieve; peacefully remembering the Lord, work with the spirit of helping others (paropakāra). After some time you will find success.`},
+  rra:{p:'452',
+    hi:`हे भाई ! तुम्हारा मन बड़ा चञ्चल है, तुम स्थिर विचार के नहीं हो। तुम धन का लाभ चाहते हो, पर अशुभ के कारण मूलका भी नाश दिखाई देता है। तुझे राजा के दण्ड, चोरों से, अग्नि से सावधान रहना चाहिए। तेरा शरीर भी निरोग नहीं रहेगा। स्त्री, पुत्र कुटुम्ब से तेरा विछोह होगा, इन दिनों में तू सदा शुभ काम करना।`,
+    en:`O brother! Your mind is very restless; you are not of steady thought. You want gain of wealth, but because of inauspicious karma even the loss of your principal is seen. You should be careful of punishment by the king, of thieves and of fire. Your body too will not remain healthy. You will be separated from wife, son and family; in these days always do good deeds.`},
+  rrr:{p:'452', cut:true,
+    hi:`हे पूछने वाले ! तेरा शुभ का योग है। तुझे मन वांछित फल प्राप्त होगा। तुझे धन, दौलत, जमीन, मकान, सब मिलेंगे`,
+    en:`O you who ask! You have a conjunction of auspicious karma. You will obtain the result your mind desires. You will get wealth, riches, land, house; everything`},
+  rrh:{p:'453',
+    hi:`हे प्रश्नकर्त्ता ! तेरा अशुभ का उदय है। इसलिए जो भी तू करेगा उसका खोटा ही फल मिलेगा। तुम्हारे जो मित्र बने हुए हैं उन पर विश्वास मत करो, सब तुम्हारे शत्रु हैं, तुम्हारे धन का नाश कराने पर तुले हुए हैं। तुम धन की इच्छा करते हो, वह इस समय नहीं मिलेगा। इसलिए तुम धर्म की आराधना करो। पार्श्वनाथ भगवान की भक्ति और जाप करो उससे कुछ समय बाद सफलता मिलेगी।`,
+    en:`O questioner! Your inauspicious karma is rising. Therefore whatever you do, you will get only a bad result. Do not trust those who have become your friends; all are your enemies, bent on bringing about the destruction of your wealth. You desire wealth; it will not be obtained at this time. Therefore worship dharma. Do devotion and japa of Pārśvanātha Bhagavān; through that you will find success after some time.`},
+  rht:{p:'453',
+    hi:`अहो पूछने वाले ! इसका क्या फल कहूँ। तेरा बड़ा शुभ का उदय है। तुझे विद्या की प्राप्ति, कवियों में सम्मान, व्यवहार में निपुणता मिलेगी, स्त्री और पुत्र का लाभ होगा। व्यापार में धन प्राप्त होगा। भाई बन्धुओं और मित्रों से वस्त्र और आभूषणों के साथ मिलाप होगा। परिवार के सुख के लिए नित्य भगवान की पूजा कर।`,
+    en:`Ah, you who ask! What result of this shall I tell? Your auspicious karma is rising greatly. You will obtain learning, honour among poets and skill in worldly dealings; you will gain a wife and a son. You will obtain wealth in business. You will be reunited with brothers, kin and friends, with clothes and ornaments. For the happiness of the family, worship the Lord daily.`},
+  rta:{p:'453',
+    hi:`हे पृच्छक ! तुम्हारे सौभाग्य दिन हैं तुम्हारे हृदय में पुत्रादि के सुख की लालसा है, धन सुख आनन्द दायक भोजन पाने की इच्छा है वह सब पूर्ण होगी। तुम्हें मन्त्र तन्त्र और औषधि से सर्वत्र सफलता प्राप्त होगी।`,
+    en:`O enquirer! These are your days of good fortune. In your heart is the longing for the happiness of sons and so on; the wish to obtain wealth, happiness and joy-giving food: all that will be fulfilled. You will obtain success everywhere through mantra, tantra and medicine.`},
+  rtr:{p:'453',
+    hi:`हे सज्जन ! तुम शान्ति से सुनो। तुम्हारे उद्योग से पद पद पर सफलता मिलेगी। इसलिए तुम अपने कार्य में लगे रहो, तुम्हें लाभ होगा। श्री जिनराज की सेवा से तुम्हें स्त्री, पृथ्वी, धन मिलेगा। राजा द्वारा सम्मान मिलेगा। हाथी, घोड़े, आभूषणों की बिना चाहे ही प्राप्ति होगी।`,
+    en:`O good person! Listen calmly. Through your effort you will find success at every step. Therefore stay engaged in your work; you will gain. Through service of Shri Jinarāja you will obtain a wife, land and wealth. You will be honoured by the king. Elephants, horses and ornaments will come to you without even wishing for them.`},
+  rth:{p:'453–454',
+    hi:`हे भाई ! तुमने पहले बहुत कष्ट भोगे हैं पर वे अब दूर हो गये। तुम्हारे हृदय में जो धन, स्त्री, पुत्र, गहनों की चिन्ता है वह दूर होगी। शरीर के रोग, शोक और दुखों का नाश होकर जिनधर्म के प्रभाव से तेरे हृदय के सब मनोरथ पूर्ण होंगे।`,
+    en:`O brother! You have suffered many hardships before, but now they have gone away. The worry in your heart about wealth, wife, son and jewellery will go away. The diseases of the body, grief and sorrows will be destroyed, and through the influence of Jina dharma all the wishes of your heart will be fulfilled.`},
+  rtt:{p:'454',
+    hi:`हे प्रश्नकर्त्ता ! तेरा प्रश्न अच्छा है। तेरे सब कार्य सफल होंगे। इच्छित धन सम्पत्ति का लाभ होगा। तुम जो विचारोगे वह सरलता से सिद्ध होगा। यह सब धर्म का प्रभाव है इसमें सन्देह मत करो। तुम जो कल्याण के लिए तप धारण करना चाहते हो, तुम्हें उसमें भी सफलता मिलेगी। इसलिए तुम वीतराग भगवान के बताये हुए तप के मार्ग को ग्रहण करो। जिससे सच्चे और स्थायी सुख की प्राप्ति हो।`,
+    en:`O questioner! Your question is good. All your works will succeed. You will gain the wealth and property you desire. Whatever you think of will be accomplished easily. All this is the influence of dharma; do not doubt it. The austerity (tapa) you wish to undertake for your welfare: you will find success in that too. Therefore take up the path of austerity taught by the Vītarāga Bhagavān, through which true and lasting happiness is obtained.`},
+
+  haa:{p:'454',
+    hi:`इन तीनों वर्णों का फल चिन्ता कारक है। कष्ट चिन्ता, कार्य-विनाश, लोक-निन्दा और युद्ध में पराजय, उद्योग में असफलता मिलती है। कार्य सिद्धि के लिए जो भी प्रयत्न करते हो उसी में असफलता मिलेगी। इसलिए इस समय मौन होकर कुछ समय धर्म ध्यान करो। शुभ उदय आते ही सफलता मिलेगी।`,
+    en:`The result of these three letters causes worry. One meets with trouble, worry, ruin of work, public censure, defeat in war and failure in enterprise. Whatever effort you make to accomplish your work, you will meet failure in that very thing. Therefore at this time, keeping silent, do dharma-dhyāna (religious meditation) for some time. As soon as auspicious karma rises, you will find success.`},
+  har:{p:'454',
+    hi:`यह बहुत लाभदायक पासा पड़ा है। तुम्हारे सभी मनोरथ सफल होंगे। स्त्री एवं धन की प्राप्ति होगी, भाइयों से सुख पहुँचेगा। हरेक कार्य में, घर में, विदेश में, सर्वत्र लाभ ही लाभ होगा। तुम्हारे सब रोग शोक दूर होंगे। अच्छे दिनों में भगवान की आराधना भक्ति पूर्वक करते ही रहना क्योंकि धर्म ही सदा सहायक होता है।`,
+    en:`A very beneficial throw of the die has fallen. All your wishes will succeed. You will obtain a wife and wealth; happiness will come from brothers. In every work, at home, abroad, everywhere there will be gain upon gain. All your diseases and grief will go away. In good days, keep on worshipping the Lord with devotion, because dharma alone is always the helper.`},
+  hah:{p:'454–455',
+    hi:`हे भव्य ! तुम बहुत सरल एवं सीधे स्वभाव के हो। तुम मित्र और शत्रु को समान समझते हो। तुमने ऐसे लोगों के लिए अपना धन खर्च किया है। परन्तु यह कलिकाल है और तुम साधु स्वभाव वाले हो। चिन्ता मत करो, तुम्हारा अच्छा समय है, गया हुआ धन मिलेगा। पुण्य की जड़ सदा हरी होती है।`,
+    en:`O bhavya! You are of a very simple and straightforward nature. You regard friend and enemy as equal. You have spent your wealth for such people. But this is the Kali age, and you are of a saintly nature. Do not worry; your time is good; the wealth that has gone will be found. The root of merit is always green.`},
+  hat:{p:'455',
+    hi:`हे प्रश्नकर्त्ता ! तेरा शुभ का उदय है। धर्म के प्रताप से तेरे सारे क्लेश और व्याधियाँ दूर हुई हैं, धनधान्य की प्राप्ति होगी। परदेश में धन लाभ होगा, तुझे जो धन की चिन्ता है वह पूरी होगी और स्त्री, पुत्र आभूषण तथा सकल सुखों की प्राप्ति होगी।`,
+    en:`O questioner! Your auspicious karma is rising. Through the power of dharma all your troubles and ailments have gone away; you will obtain wealth and grain. You will gain wealth abroad; your worry about wealth will be resolved, and you will obtain a wife, son, ornaments and all happiness.`},
+  hra:{p:'455',
+    hi:`ये तीनों वर्ण परम लाभ के सूचक हैं। तेरे सभी इच्छित कार्य पूरे होंगे, धन धान्य बढ़ेगा। देश विदेशों में यश फैलेगा। राज्य में प्रतिष्ठा बढ़ेगी। धनादि आभूषणों से सम्मान होगा। इस तरह से तुम सबके प्रिय बनोगे।`,
+    en:`These three letters indicate supreme gain. All your desired works will be completed; wealth and grain will increase. Your fame will spread in your country and abroad. Your prestige in the state will grow. You will be honoured with wealth, ornaments and the like. In this way you will become dear to all.`},
+  hrr:{p:'455',
+    hi:`हे प्रश्नकर्त्ता ! तेरे वर्तमान समय में अशुभ उदय है, इसलिए तू दुश्चिन्ताओं में फंसा हुआ है और धन का भी नाश हुआ परन्तु तू घबरा मत और पुण्य कार्यों में तथा धर्म पर अटल रह शीघ्र ही लाभ होगा और देश विदेश में सम्मान तथा मित्रों कुटुम्बी-जनों से भी सुख प्राप्त होगा।`,
+    en:`O questioner! At your present time inauspicious karma is rising; therefore you are caught in bad worries, and your wealth too has been destroyed. But do not panic; stay firm in meritorious deeds and in dharma, and soon there will be gain, honour in your country and abroad, and happiness from friends and family members too.`},
+  hrh:{p:'455',
+    hi:`हे सज्जन ! तेरे पासे के ये तीनों वर्ण परम शुभ हैं। तेरे को बड़ा लाभ होगा। पुत्र का विवाह होगा और धन मिलेगा। विरोधी भी मित्र बनकर भला करेंगे, युद्ध में वाद-विवाद में सफलता होगी। तेरा शुभका उदय है, इसे स्थायी बनाने के लिए धर्म के कार्य कर और श्रीचन्द्रप्रभु भगवान की पूजा विशेष रूप से कर उससे तेरा कल्याण होगा।`,
+    en:`O good person! These three letters of your die are supremely auspicious. You will have great gain. A son's marriage will take place and you will get wealth. Even opponents will become friends and do you good; there will be success in war and in disputes. Your auspicious karma is rising; to make it lasting, do works of dharma and worship Shri Candraprabhu Bhagavān especially; through that you will have welfare.`},
+  hrt:{p:'456',
+    hi:`हे पृच्छक ! तेरे मन में कुछ चिन्ता है पर वह व्यर्थ का वहम है, तू अपने हृदय से उसे निकाल दे। तेरा सब सोचा हुआ कार्य सिद्ध होगा। उद्यम में लक्ष्मी की प्राप्ति, मुकदमे में जीत होगी। किसी भी प्रकार की हानि न होगी। तू संयम और दान में मन लगा, तेरे मनकी चिन्ता नष्ट होकर तेरी गृहस्थी में सुख का विस्तार होगा।`,
+    en:`O enquirer! There is some worry in your mind, but it is a needless delusion; remove it from your heart. All the work you have thought of will be accomplished. In your enterprise Lakshmi will be obtained; there will be victory in the lawsuit. There will be no loss of any kind. Set your mind on restraint (saṃyama) and charity (dāna); the worry in your mind will be destroyed and happiness will expand in your household.`},
+  hha:{p:'456',
+    hi:`ये वर्ण आनन्द के सूचक हैं। तेरे पास पर्याप्त लक्ष्मी है, पुत्र-पौत्रादि से सुख बढ़ेगा। बिछुड़े हुए भाई, मित्र परदेश में सुखी हैं, और उनका शीघ्र ही सुखकारक मिलाप होगा। श्री जिनेन्द्र भगवान की सेवा के प्रताप से सब प्रकार के मंगल होंगे और आगामी एक वर्ष में बहुत धन का लाभ होगा।`,
+    en:`These letters indicate joy. You have sufficient Lakshmi; happiness will grow through sons, grandsons and so on. Your separated brothers and friends are happy abroad, and soon there will be a joyful reunion with them. Through the power of serving Shri Jinendra Bhagavān there will be auspiciousness of every kind, and in the coming one year there will be gain of much wealth.`},
+  hhr:{p:'456',
+    hi:`हे भाई ! तुम्हारे सब प्रकार का आनन्द होगा तुम्हारे पुत्र के विवाह की चिन्ता दूर होगी और विवाह शीघ्र होगा। तू श्री चौबीसीजी की पूजा विधान कर उससे धन, धान्य, वस्त्राभूषण की बढ़वारी होगी। जहाँ जाएगा लाभ होगा। यह सब जानते हैं कि भगवान की भक्ति से तथा जप दान से सब कार्य सिद्ध होते हैं।`,
+    en:`O brother! You will have joy of every kind; your worry about your son's marriage will go away and the marriage will happen soon. Perform the pūjā-vidhāna of Shri Caubīsī-jī (the 24 Tīrthaṅkaras); through it wealth, grain, clothes and ornaments will increase. Wherever you go there will be gain. Everyone knows that through devotion to the Lord and through japa and charity all works are accomplished.`},
+  hhh:{p:'456',
+    hi:`इन तीनों वर्णों का फल परम लाभ का सूचक है। देश में सुख शान्ति हो, धन की प्राप्ति हो, खोई हुई जायदाद प्राप्त हो, लड़ाई झगड़े में सफलता मिले, व्यापार में धन मिले, बन्धुओं और मित्रों से स्नेह बढ़े। तुम्हारे सम्पूर्ण प्रकार के आनन्द होंगे, श्रद्धा से धर्म का सेवन करो।`,
+    en:`The result of these three letters indicates supreme gain. There will be happiness and peace in the country; wealth will be obtained; lost property will be recovered; there will be success in fights and quarrels; wealth will come in business; affection with kin and friends will grow. You will have joy of every kind; practise dharma with faith.`},
+  hht:{p:'456–457',
+    hi:`हे पूछने वाले ! तुझे अच्छा लाभ होगा। तुम परदेश जाना चाहते हो, वहाँ तुम्हें धन लाभ होगा। खेती व्यापार नौकरी आदि में इच्छानुसार लाभ होगा। देव, गुरु शास्त्र के प्रभाव से संसार में सुख के साधन, धन, धान्य, सोना, चाँदी आदि तुझे इच्छानुसार मिलेंगे। तू श्री महावीर प्रभु की सेवा में मन लगा।`,
+    en:`O you who ask! You will have good gain. You wish to go abroad; there you will gain wealth. In farming, business, employment and so on you will gain as you wish. Through the influence of Deva, Guru and Śāstra, the means of happiness in the world, wealth, grain, gold, silver and so on, will come to you as you wish. Set your mind on the service of Shri Mahāvīr Prabhu.`},
+  hta:{p:'457',
+    hi:`ये तीनों वर्ण पूछने वाले के मन के भाव साफ प्रगट कर रहे हैं। हे पृच्छक ! तू लोभ में फंसकर परधन चाहता है, यह अच्छा नहीं। तू संतोष को धारण कर लोभ को त्याग कर जो होनहार है होकर रहेगा। परन्तु कुछ समय बाद तेरे पुण्य का उदय है, उस समय तेरा कल्याण होगा, तब तक तू वीतराग भगवान की आराधना कर।`,
+    en:`These three letters clearly reveal the feelings in the mind of the one who asks. O enquirer! Caught in greed, you want the wealth of others; this is not good. Take up contentment and give up greed; what is destined will surely happen. But after some time your merit will rise; at that time you will have welfare. Until then, worship the Vītarāga Bhagavān.`},
+  htr:{p:'457',
+    hi:`तेरे मन में दूसरे के धन की आशा लगी है, तू चाहता है वह तुझे मिलेगा। धन की प्राप्ति, यश की वृद्धि का समागम होगा और तेरा गया हुआ धन भी पुनः मिलेगा। इस प्रकार हे सज्जन! तू जो भी विचारता है तेरा सब मनवांछित प्राप्त होगा। ऐसा समझकर हृदय की चिन्ता दूर कर दान-पुण्य आदि शुभ कार्यों को कर।`,
+    en:`In your mind is the hope of another's wealth; what you want, you will get. There will be gain of wealth and growth of fame, and your lost wealth too will be found again. In this way, O good person, whatever you think of, all that your mind desires will be obtained. Understanding this, remove the worry from your heart and do auspicious works such as charity and meritorious deeds.`},
+  hth:{p:'457',
+    hi:`हे पूछने वाले ! तेरा मन खोटे कर्मों में लगा हुआ है, तू चोरी से, जुए से, सट्टे से धन चाहता है तू दुःख पाता है, बदनाम हो रहा है और तेरा विश्वास उठ गया है। अब तू इस मार्ग को छोड़ दे और ठीक मार्ग पर इच्छित कार्य पूरा होगा।`,
+    en:`O you who ask! Your mind is engaged in bad deeds; you want wealth through theft, gambling and speculation (saṭṭā). You suffer, you are getting a bad name, and trust in you has gone. Now leave this path, and on the right path your desired work will be completed.`},
+  htt:{p:'457',
+    hi:`हे मित्र ! तेरे मन में जो धन, धान्य तथा सुख सम्पत्ति से भरे हुए घर की चाह है वह सफल होगी। तू चिन्ता का त्याग कर विदेश जा। वहाँ तुझे मन्त्र, सम्मोहन एवं और भी जितनी विद्याएँ हैं सब प्राप्त होंगी। उन से तेरे मनकी अभिलाषा पूर्ण होगी।`,
+    en:`O friend! The longing in your mind for a home full of wealth, grain, happiness and property will succeed. Give up worry and go abroad. There you will obtain mantra, sammohana (the art of enchantment) and all the other vidyās there are. Through them the desire of your mind will be fulfilled.`},
+
+  taa:{p:'458',
+    hi:`हे पूछने वाले ! यह पासा बतलाता है कि यदि तू देव पूजा, दान पुण्यादि पवित्र कार्य करेगा तो तुझे सब लाभ की प्राप्ति होगी। जैसे बीज के बिना वृक्ष नहीं होता, वैसे ही बिना पुण्य के सुख प्राप्त नहीं होता। तुझे पुत्र, पौत्र, धन, धान्य का लाभ और व्यापार में धन लाभ होगा। लड़ाई में विजय होगी।`,
+    en:`O you who ask! This die tells that if you do holy works such as worship of the Deva, charity and meritorious deeds, you will obtain all gain. Just as there is no tree without a seed, so without merit happiness is not obtained. You will gain sons, grandsons, wealth and grain, and gain wealth in business. There will be victory in battle.`},
+  tar:{p:'458',
+    hi:`हे भाई ! तेरा प्रश्न मध्य फल दाता है। तुम्हारे हृदय में जिस स्त्री या पुरुष की चाह है, उसको छोड़ दो तथा त्याग दो, क्योंकि स्त्री पुरुष, धन कुटुम्ब आदि होनहार के आधीन हैं। प्रभु भक्ति में मन लगा, कुछ समय बाद तुम्हें पर्याप्त धन लाभ होगा।`,
+    en:`O brother! Your question gives a middling result. The woman or man you long for in your heart: leave them and give them up, because woman and man, wealth, family and so on are subject to destiny. Set your mind on devotion to the Lord; after some time you will gain sufficient wealth.`},
+  tah:{p:'458',
+    hi:`हे प्रश्नकर्त्ता ! तेरे मन में दिन-रात धन की चाह रहती है या नहीं ? परन्तु भाई ! बिना पुण्य के मिले कैसे ? तेरे ये दिन बुरे हैं। लेकिन दुखी मत हो और जिनदेव की आराधना कर भक्ति में तल्लीन हो जा, तेरा शुभोदय शीघ्र ही होगा। उस समय अचानक धन लाभ होगा।`,
+    en:`O questioner! Does the longing for wealth not stay in your mind day and night? But brother! Without merit, how can it be obtained? These days of yours are bad. But do not be sad; worship Jinadeva and become absorbed in devotion; your auspicious rising will come soon. At that time there will be a sudden gain of wealth.`},
+  tat:{p:'458',
+    hi:`ऐ भाई ! प्रसन्न होकर सुन, तेरे हृदय में जो परदेश गमन तथा तीर्थयात्रा की इच्छा है तथा तेरे शरीर में जो रोग या पीड़ा है वह एक महीने में दूर होगी और इच्छानुसार धन लाभ होगा। तुझे सब प्रकार के आनन्द प्राप्त होंगे। तू बीच का यह एक महीने का समय श्री वीर प्रभु की सेवा में लगा।`,
+    en:`Hey brother! Listen with a happy heart. The wish in your heart to travel abroad and to go on pilgrimage, and the disease or pain in your body: that will be resolved within one month, and you will gain wealth as you wish. You will obtain joys of every kind. Spend this intervening month in the service of Shri Vīr Prabhu.`},
+  tra:{p:'458–459',
+    hi:`तुम्हारा डाला हुआ यह पासा प्रकट करता है कि तुझे धन की चिन्ता है और इसलिए तुम परदेश गमन करना चाहते हो। अतः हे सज्जन ! तुम जाओ। तुम्हें वहाँ धन का लाभ, वस्त्र, आभूषण स्त्री-पुत्रादि की प्राप्ति होगी। माता, पिता और बन्धु का समागम होगा। यह सब गुरु सेवा का फल है। इसलिए हे भाई ! तुम आगे भी वीतराग भगवान की मन लगाकर सेवा करते रहो, इसी में तुम्हारा कल्याण है।`,
+    en:`This die you have thrown reveals that you are worried about wealth and therefore want to travel abroad. So, O good person! Go. There you will gain wealth and obtain clothes, ornaments, wife, sons and so on. You will be united with mother, father and kin. All this is the fruit of serving the guru. Therefore, O brother! Keep serving the Vītarāga Bhagavān with devotion in future too; in this lies your welfare.`},
+  trr:{p:'459',
+    hi:`हे पृच्छक ! तुम्हारी चिन्ता तुम्हारे पासे से ही प्रकट होती है। तुम्हारे घर में दरिद्रता ने पैर जमाये हैं, अतः तुम रात दिन धन की चिन्ता करते हो और उसी के उपाय भी करते हो, किन्तु अभी 3 वर्ष तक तुम्हारा शुभ का उदय नहीं। अतः इस समय के बाद ही तुम्हें सुख की सामग्री प्राप्त होगी, उसी समय तुम किसी अन्य नये कार्य में मन लगाना। उसी से तुम्हें लाभ और यश मिलेगा।`,
+    en:`O enquirer! Your worry is revealed by your die itself. Poverty has set its feet in your home; therefore you worry about wealth night and day and also try remedies for it, but for 3 years yet your auspicious karma does not rise. So only after this time will you obtain the means of happiness; at that time set your mind on some other new work. From that you will get gain and fame.`},
+  trh:{p:'459',
+    hi:`हे सज्जन ! यह बहुत शुभ पासा है। इसके प्रताप से तुझे सब कल्याण की सामग्री मिलेगी। जिनेन्द्र भगवान की सेवा के प्रभाव से सब विघ्न बाधाएँ पल भर में दूर होंगी। धन, पुत्र, युद्ध में विजय, भाइयों के साथ प्रेम बढ़ेगा। घर में लड़ाई झगड़े न होंगे। तुम्हारे सारे पाप, सन्ताप दूर होकर कल्याण की प्राप्ति होगी। तुम इस सुखको स्थायी बनाने के लिए भगवान की आराधना करते रहो।`,
+    en:`O good person! This is a very auspicious throw. By its power you will obtain all the means of welfare. Through the influence of serving Jinendra Bhagavān, all obstacles and hindrances will be removed in a moment. Wealth, a son, victory in war, and love with brothers will grow. There will be no fights or quarrels in the home. All your sins and torments will be removed and you will attain welfare. To make this happiness lasting, keep worshipping the Lord.`},
+  trt:{p:'459',
+    hi:`यह बहुत अच्छा शकुन है। तुम्हारा मन धन की चिन्ता में दुखी है, बहुत दिन से तुम चिन्ता कर रहे हो पर अब अच्छा समय आ गया है। तुम्हें सुख की सामग्री, प्रियजनों का समागम, धन लाभ होगा। यदि परदेश गमन करो तो बहुत अधिक लाभ हो। वाद-विवाद में जीत, सभ्य समाज में मान और प्रतिष्ठा मिलेगी। देव-गुरु-धर्म पर अटल श्रद्धा रखो।`,
+    en:`This is a very good omen. Your mind is unhappy with worry about wealth; you have been worrying for many days, but now a good time has come. You will have the means of happiness, union with loved ones and gain of wealth. If you travel abroad there will be very great gain. You will win in disputes and receive respect and prestige in civilised society. Keep unshakable faith in Deva, Guru and Dharma.`},
+  tha:{p:'460',
+    hi:`पासा डालने पर जब ये तीन वर्ण पड़ें तो बड़ा लाभ हो। सारे विघ्न और संकट दूर हों, जहाँ भी जायें वहीं इच्छित फल की प्राप्ति हो। धन, धान्य, वस्त्र, गाय, भैंस, घोड़ा आदि वैभव की सामग्री का मिलाप हो। तीर्थयात्रा, परदेश गमन, युद्ध, समुद्र पार सर्वत्र सफलता ही सफलता प्राप्त होगी। इसलिए हे पृच्छक ! इस कल्पवृक्ष समान फलदाता शकुन का फल भोगता हुआ तू अपने इष्टदेव की सेवा में मन लगा।`,
+    en:`When these three letters fall on throwing the die, there will be great gain. All obstacles and troubles will be removed; wherever you go, there the desired result will be obtained. There will be a gathering of the things of prosperity: wealth, grain, clothes, cows, buffaloes, horses and so on. In pilgrimage, travel abroad, war and across the sea, everywhere, success upon success will be obtained. Therefore, O enquirer! Enjoying the fruit of this omen that gives results like the wish-fulfilling tree (kalpavṛkṣa), set your mind on the service of your chosen deity.`},
+  thr:{p:'460',
+    hi:`हे पूछने वाले ! तेरा पाप का उदय है, तेरा लिया हुआ शकुन यही बताता है, तुम दुखी हो, कष्ट पा रहे हो, तुम्हारा धन नष्ट हो गया शरीर में भी बीमारियाँ हो रही हैं। पुत्र और मित्रों का वियोग हुआ है। जो भी विचारते हो उसी से कष्ट बढ़ते हैं। तुम्हारे घर में क्लेश पहुँचाने वाली लड़ाकू स्त्री है या पुरुष है, और यही पाप दुःख दे रहा है। इसलिए तू कुछ समय तक विपत्ति नाशक भगवान पार्श्वनाथ की पूजा कर इससे तुझे शान्ति मिलेगी।`,
+    en:`O you who ask! Your sinful karma is rising; the omen you have taken says exactly this: you are unhappy, you are suffering, your wealth has been destroyed, and illnesses are occurring in your body too. There has been separation from son and friends. Whatever you think of, from that very thing your troubles grow. In your home there is a quarrelsome woman or man who causes strife, and this very sin is giving you sorrow. Therefore for some time worship Bhagavān Pārśvanātha, the destroyer of calamity; through this you will get peace.`},
+  thh:{p:'460',
+    hi:`हे शकुन लेने वाले ! तेरा पाप का उदय है, अतः तू कुछ दिन युद्ध में या वाद-विवाद झगड़े में योग मत दे। इन कामों में तुझे कष्ट ही उठाना पड़ेगा, धन की धर्म की हानि ही होगी। तुम्हारे घर में कलह, लड़ाई, झगड़े, चिन्ता का राज्य है, भाई बान्धव मित्र आदि भी शत्रु जैसे प्रतीत होते हैं। इसलिए अपना खोटा समय जानकर भगवान की भक्ति करता हुआ दुख नाश करने का उपाय सोच।`,
+    en:`O you who take the omen! Your sinful karma is rising; therefore for some days do not take part in war or in disputes and quarrels. In these things you will only have to bear trouble; there will only be loss of wealth and of dharma. In your home quarrel, fighting, disputes and worry reign; brothers, kin, friends and others too seem like enemies. Therefore, knowing this to be your bad time, while doing devotion to the Lord, think of a way to destroy sorrow.`},
+  tht:{p:'460–461',
+    hi:`हे भाई ! तुम्हारा शकुन मध्यम है। इसलिए जो तुम सोचते हो वह फल न होगा। कुछ दिन ठहरना ही ठीक है। पाप का उदय समझकर चिन्ता मत करो, भावी बलवान होता है। मन में मृत्यु का भय मत कर, अज्ञान बुद्धि को छोड़ दे। सुख पाने के लिए महावीर प्रभु का स्मरण कर।`,
+    en:`O brother! Your omen is middling. Therefore what you are thinking will not come to fruit. It is right to wait for some days. Understanding it as the rising of sinful karma, do not worry; what is to be (bhāvī) is powerful. Do not fear death in your mind; give up the intellect of ignorance. To obtain happiness, remember Mahāvīr Prabhu.`},
+  tta:{p:'461',
+    hi:`हे प्रश्नकर्त्ता ! तुम्हारा शुभ का उदय है, तुम्हें महान सुख मिलेगा, धन धान्य का समागम होगा। राज्य से भी आदर होगा। व्यापार में धन प्राप्त होगा। पुत्री का विवाह, साथ ही तुम्हें सुपुत्र की प्राप्ति भी होगी।`,
+    en:`O questioner! Your auspicious karma is rising; you will get great happiness; there will be an accumulation of wealth and grain. You will be respected by the state too. You will obtain wealth in business. A daughter's marriage, and along with it you will also obtain a good son.`},
+  ttr:{p:'461',
+    hi:`हे प्रश्नकर्त्ता ! तुम्हारा शकुन उत्तम है। तुमने सदा सुख ही पाया है, आगे भी भाई, बन्धु, पुत्र, धन, धान्य की बढ़वारी ही होगी। विदेश में भी सुख ही मिलेगा। सबसे मित्रता और बन्धुता का व्यवहार होगा। तुम्हारे शत्रु डर कर तुम्हारे मित्र हो जायेंगे। घर में गाय, भैंस, घोड़ा आदि वाहन भी रहा करेंगे।`,
+    en:`O questioner! Your omen is excellent. You have always found only happiness; ahead too there will only be increase of brothers, kin, sons, wealth and grain. Abroad too you will find only happiness. With everyone there will be friendship and kinship. Your enemies, out of fear, will become your friends. In your home cows, buffaloes, horses and other conveyances will also remain.`},
+  tth:{p:'461',
+    hi:`हे भाई ! तुम आलस्य छोड़कर उद्योग करो, तुम्हें लाभ होगा और मन की भावना पूरी होगी। तीर्थ यात्रा, पूजन विधान, सब सफल होंगे। तुम्हारे घर में जो रोग-शोक है वह शीघ्र दूर होगा। सब प्रकार की भोग सामग्री प्राप्त होगी। अपने मन में किसी प्रकार का सन्देह मत कर। भगवान की भक्ति से सब सुख सामग्री सरलता से प्राप्त हो जाती है।`,
+    en:`O brother! Give up laziness and make effort; you will gain and the wish of your mind will be fulfilled. Pilgrimage, pūjā and vidhāna will all succeed. The disease and grief in your home will go away soon. You will obtain enjoyments of every kind. Do not have doubt of any kind in your mind. Through devotion to the Lord, all the means of happiness are obtained easily.`},
+  ttt:{p:'461',
+    hi:`हे पृच्छक ! तेरा शकुन बड़ा कल्याणकारी है। तुम्हारे मन चाहे कार्य सिद्ध होंगे। घर में पुत्र पौत्रादि का जन्म होगा। धन बढ़ेगा, सुख बढ़ेगा, विवाह होंगे। नष्ट हुआ धन पुनः प्राप्त होगा। शत्रु शत्रुता छोड़ेंगे। हितैषी मित्रों का मिलन होगा। तुम सदा धर्म की आराधना करते रहो, यही सब सुखों का देने वाला है। ॥ इति ॥`,
+    en:`O enquirer! Your omen is greatly beneficial. The works your mind wishes for will be accomplished. Sons, grandsons and so on will be born in the home. Wealth will increase, happiness will increase, marriages will take place. Lost wealth will be obtained again. Enemies will give up enmity. You will meet well-wishing friends. Always keep worshipping dharma; this alone is the giver of all happiness. ॥ Iti (the end) ॥`}
+};
+
+/* ---------- Interface text ---------- */
+const UI = {
+  hi:{
+    brand:'अरहंत पासा केवली', home:'मुखपृष्ठ',
+    author:'श्री पंडित वृन्दावन जी काशी निवासी रचित',
+    lede:'अ, र, हं, त — श्री अरहंत भगवान के नाम के इन चार वर्णों वाला पासा तीन बार डालें और पुस्तक में लिखा फल पढ़ें।',
+    begin:'विधि सहित आरम्भ करें', browse:'फल-सूची देखें',
+    basis:'पुस्तक के पृष्ठ 445–461 के अनुसार। सभी फल मूल पाठ के शब्दों में ही दिए गए हैं।',
+    step:'चरण', steps:['परिचय','विधि','मंगलाचरण','ध्यान','मन्त्र एवं पासा','फल'],
+    next:'आगे', back:'पीछे',
+    introH:'परिचय', prepH:'विधि', prepCheck:'इन बातों का ध्यान रखें', prepDone:'तैयारी पूर्ण हुई',
+    dohaH:'मंगलाचरण', dohaSub:'दोहा',
+    dhyanH:'ध्यान', dhyanDone:'मन में प्रश्न का विचार कर लिया',
+    chooseH:'मन्त्र चुनें', chooseMantra:'तीनों मन्त्र', chooseMantraSub:'प्रत्येक मन्त्र सात बार जप कर पासा डालें',
+    chooseNamokar:'णमोकार मन्त्र', chooseNamokarSub:'यदि मन्त्र के उच्चारण में कठिनाई हो', changeMode:'मन्त्र का चुनाव बदलें',
+    throwN:n=>`पासा ${n} / 3`, mantraNames:['प्रथम मन्त्र','दूसरा मन्त्र','तीसरा मन्त्र'],
+    japTap:c=>`एक बार जप किया · ${c}/7`, japSkip:'माला पर सात बार जप कर लिया',
+    namokarDone:'णमोकार मन्त्र पढ़ लिया',
+    namokarNote:'णमोकार मन्त्र का पाठ पुस्तक के इन पृष्ठों में मुद्रित नहीं है; सुविधा के लिए यहाँ दिया गया है।',
+    throwBtn:'पासा डालें', rolling:'पासा घूम रहा है…', ownDie:'मेरे पास अपना पासा है', virtualDie:'यहीं पासा डालें',
+    whichUp:'पासे के ऊपर कौन-सा वर्ण आया?', gotLetter:l=>`ऊपर आया: ${l}`,
+    fair:'हर बार वर्ण ब्राउज़र के क्रिप्टोग्राफ़िक यादृच्छिक जनरेटर से नए सिरे से तय होता है। चारों वर्णों की सम्भावना बराबर (1/4) है।',
+    noRng:'इस ब्राउज़र में सुरक्षित यादृच्छिक जनरेटर उपलब्ध नहीं है, इसलिए अपना पासा डालकर ऊपर आया वर्ण चुनें।',
+    allIn:'तीनों वर्ण आ गए।', seeResult:'फल देखें',
+    page:'पृष्ठ', pages:'पृष्ठ', original:'मूल हिन्दी पाठ', textEnds:'मुद्रित पृष्ठ पर पाठ यहीं समाप्त होता है।',
+    missingH:'इस संयोग का फल उपलब्ध नहीं',
+    missing:'यह संयोग पुस्तक के उपलब्ध पृष्ठों (445–461) में मुद्रित नहीं है। पृष्ठ 452 "र, र, र" पर समाप्त होता है और पृष्ठ 453 "र, र, हं" से आरम्भ होकर सीधे "र, हं, त" पर जाता है। यहाँ अपनी ओर से कोई फल नहीं जोड़ा गया है; इसे मूल पुस्तक के किसी अन्य संस्करण में देखें।',
+    again:'नया प्रश्न करें', restart:'शुरू से',
+    browseH:'फल-सूची', browseSub:'जो तीन वर्ण आए हों, उन्हें चुनें। प्रत्येक प्रकरण पहले वर्ण के अनुसार है।',
+    notPrinted:'मुद्रित नहीं', closing:'समापन दोहा'
+  },
+  en:{
+    brand:'Arhant Pāsā Kevalī', home:'Home',
+    author:'Composed by Shri Pandit Vrindavan ji of Kashi',
+    lede:'A, Ra, Haṃ, Ta: throw the die bearing these four letters of the name of Shri Arhant Bhagavān three times, and read the result written in the book.',
+    begin:'Begin with the ritual', browse:'Browse all results',
+    basis:'Based on pages 445–461 of the book. Every result is the book’s own text, given here in a close English translation, with the original Hindi one tap away.',
+    step:'Step', steps:['Introduction','Preparation','Invocation','Meditation','Mantras & die','Result'],
+    next:'Continue', back:'Back',
+    introH:'Introduction', prepH:'Preparation', prepCheck:'Keep these in mind', prepDone:'I am prepared',
+    dohaH:'Invocation', dohaSub:'Dohā (couplets)',
+    dhyanH:'Meditation', dhyanDone:'My question is in mind',
+    chooseH:'Choose the mantra', chooseMantra:'The three mantras', chooseMantraSub:'Chant each mantra seven times, then throw the die',
+    chooseNamokar:'Ṇamokār Mantra', chooseNamokarSub:'If pronouncing the mantras is difficult', changeMode:'Change the mantra choice',
+    throwN:n=>`Throw ${n} of 3`, mantraNames:['First mantra','Second mantra','Third mantra'],
+    japTap:c=>`Chanted once · ${c}/7`, japSkip:'I have chanted it seven times on my mālā',
+    namokarDone:'I have recited the Ṇamokār Mantra',
+    namokarNote:'The text of the Ṇamokār Mantra is not printed on these pages of the book; it is given here for convenience.',
+    throwBtn:'Throw the die', rolling:'The die is rolling…', ownDie:'I have my own die', virtualDie:'Throw the die here',
+    whichUp:'Which letter came on top of your die?', gotLetter:l=>`On top: ${l}`,
+    fair:'Each throw is decided afresh by your browser’s cryptographic random generator. All four letters are equally likely (1 in 4).',
+    noRng:'This browser has no secure random generator, so throw your own die and pick the letter that came on top.',
+    allIn:'All three letters have come.', seeResult:'See the result',
+    page:'Page', pages:'Pages', original:'Original Hindi text', textEnds:'The printed text ends here on the page.',
+    missingH:'No result for this combination',
+    missing:'This combination is not printed in the available pages of the book (445–461). Page 452 ends with "Ra, Ra, Ra", and page 453 begins with "Ra, Ra, Haṃ" and goes straight on to "Ra, Haṃ, Ta". Nothing has been made up in its place; please look for it in another edition of the book.',
+    again:'Ask a new question', restart:'Start over',
+    browseH:'Index of results', browseSub:'Pick the three letters you got. Each chapter covers one first letter.',
+    notPrinted:'Not printed', closing:'Closing couplet'
+  }
+};
+
+/* ---------- State ---------- */
+let LANG = 'hi';
+try { const v = localStorage.getItem('apk-lang'); if (v === 'hi' || v === 'en') LANG = v; } catch (e) {}
+const S = {view:'home', prep:[false,false,false,false,false,false], mode:null, ti:0, count:0, chanted:false,
+           letters:[], own:false, rolling:false, angle:0, combo:null, justGot:false};
+const T = () => UI[LANG];
+const $ = s => document.querySelector(s);
+const app = $('#app');
+const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- Pieces ---------- */
+function dieHTML(id, spin){
+  return `<div class="tilt"><div class="die${spin ? ' spin' : ''}" ${id ? `id="${id}"` : ''}>
+    <div class="face f0">${LET.a}</div><div class="face f1">${LET.r}</div><div class="face f2">${LET.h}</div><div class="face f3">${LET.t}</div>
+    <div class="cap capL"></div><div class="cap capR"></div></div></div>`;
+}
+function prog(n){
+  const t = T();
+  return `<div class="prog"><div class="prog-top"><span>${t.step} ${n} / 6</span><b>${t.steps[n-1]}</b></div>
+    <div class="prog-bar" aria-hidden="true">${[1,2,3,4,5,6].map(i => `<i class="${i <= n ? 'on' : ''}"></i>`).join('')}</div></div>`;
+}
+function nav(back, next, label){
+  const t = T();
+  return `<div class="row2"><button class="btn btn-ghost" data-act="go" data-v="${back}">${t.back}</button>
+    <button class="btn btn-primary" data-act="go" data-v="${next}">${label || t.next}</button></div>`;
+}
+function slots(){
+  return `<div class="slots" role="list">${[0,1,2].map(i => {
+    const l = S.letters[i];
+    if (l) return `<div class="tile${S.justGot && i === S.letters.length - 1 ? ' pop' : ''}" role="listitem">${LET[l]}</div>`;
+    return `<div class="tile empty${i === S.ti && S.mode ? ' cur' : ''}" role="listitem">${i + 1}</div>`;
+  }).join('')}</div>`;
+}
+function couplet(d, cls){
+  return `<div class="${cls || 'couplet'}"><p class="v">${d.hi[0]}<br>${d.hi[1]}</p>${LANG === 'en' ? `<p class="tr">${d.en}</p>` : ''}</div>`;
+}
+function closing(){
+  return `<div class="closing"><p class="eyebrow">${T().closing}</p>${couplet(DOHA[5], 'couplet')}<p class="src">${T().page} 446</p></div>`;
+}
+function falBlock(code){
+  const t = T();
+  const [a, b, c] = code.split('');
+  const pk = PK[ORDER.indexOf(a)];
+  const tiles = `<div class="combo" aria-label="${[a,b,c].map(x => LET[x]).join(', ')}">${[a,b,c].map(x => `<div class="tile">${LET[x]}</div>`).join('')}</div>`;
+  const e = R[code];
+  if (!e) {
+    return `<p class="eyebrow center">${pk[LANG]}</p>${tiles}
+      <div class="card"><h2>${t.missingH}</h2><p>${t.missing}</p></div>`;
+  }
+  const headHi = (e.label || [a,b,c].map(x => LET[x]).join(', ')) + '।';
+  const headEn = [a,b,c].map(x => LAT[x]).join(', ') + '.';
+  const pg = `${e.p.includes('–') ? t.pages : t.page} ${e.p}`;
+  const body = LANG === 'hi'
+    ? `<p class="fal" lang="hi"><b>${headHi}</b> ${e.hi}</p>`
+    : `<p class="fal"><b>${headEn}</b> ${e.en}</p>`;
+  const cut = e.cut ? `<p class="src">${t.textEnds}</p>` : '';
+  const orig = LANG === 'en'
+    ? `<details class="orig"><summary>${t.original}</summary><p class="fal" lang="hi"><b>${headHi}</b> ${e.hi}</p></details>` : '';
+  return `<p class="eyebrow center">${pk[LANG]}</p>${tiles}<article class="card">${body}${cut}<p class="src">${pg}</p>${orig}</article>`;
+}
+
+/* ---------- Views ---------- */
+const VIEWS = {
+  home(){
+    const t = T();
+    return `<section class="view">
+      <div class="stage" aria-hidden="true">${dieHTML('', true)}<div class="shadow"></div></div>
+      <div style="display:grid;gap:10px">
+        <p class="eyebrow">${t.author}</p>
+        <h1>${LANG === 'hi' ? 'अरहंत पासा केवली' : 'Arhant Pāsā Kevalī'}</h1>
+        ${LANG === 'en' ? '<p class="dev" lang="hi">अरहंत पासा केवली</p>' : ''}
+        <p class="lede">${t.lede}</p>
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary" data-act="start">${t.begin}</button>
+        <button class="btn btn-ghost" data-act="go" data-v="browse">${t.browse}</button>
+      </div>
+      <p class="note">${t.basis}</p>
+    </section>`;
+  },
+  intro(){
+    const t = T();
+    return `<section class="view">${prog(1)}<h2>${t.introH}</h2>
+      <div class="card">${INTRO[LANG].map(p => `<p class="scripture">${p}</p>`).join('')}<p class="src">${t.page} 445</p></div>
+      ${nav('home', 'prep')}</section>`;
+  },
+  prep(){
+    const t = T();
+    return `<section class="view">${prog(2)}<h2>${t.prepH}</h2>
+      <p class="scripture">${PREP_LEAD[LANG]}</p>
+      <p class="eyebrow">${t.prepCheck}</p>
+      <div class="checks">${PREP[LANG].map((p, i) => `<label for="prep${i}"><input type="checkbox" id="prep${i}" data-prep="${i}" ${S.prep[i] ? 'checked' : ''}><span>${p}</span></label>`).join('')}</div>
+      <p class="src">${t.page} 445</p>
+      ${nav('intro', 'doha', t.prepDone)}</section>`;
+  },
+  doha(){
+    const t = T();
+    return `<section class="view">${prog(3)}<div style="display:grid;gap:4px"><h2>${t.dohaH}</h2><p class="muted">${t.dohaSub}</p></div>
+      <div class="card doha">${DOHA.map(d => couplet(d)).join('')}<p class="src center">${t.page} 446</p></div>
+      ${nav('prep', 'dhyan')}</section>`;
+  },
+  dhyan(){
+    const t = T();
+    return `<section class="view">${prog(4)}<h2>${t.dhyanH}</h2>
+      <div class="orb-wrap" aria-hidden="true"><div class="orb"><span>अरहंत</span></div></div>
+      <p class="scripture">${DHYAN[LANG]}</p>
+      <p class="note scr">${NOTE447[LANG]}</p>
+      <p class="src">${t.page} 445, 447</p>
+      ${nav('doha', 'ritual', t.dhyanDone)}</section>`;
+  },
+  ritual(){
+    const t = T();
+    let body = '';
+    if (!S.mode) {
+      body = `<h2>${t.chooseH}</h2>
+        <div class="actions">
+          <button class="choice" data-act="mode" data-v="mantra"><strong>${t.chooseMantra}</strong><span>${t.chooseMantraSub}</span></button>
+          <button class="choice" data-act="mode" data-v="namokar"><strong>${t.chooseNamokar}</strong><span>${t.chooseNamokarSub}</span></button>
+        </div>
+        <p class="note scr">${FOOT[LANG]}</p>`;
+    } else if (S.ti < 3) {
+      body = `<h2>${t.throwN(S.ti + 1)}</h2>${S.chanted ? throwPanel() : chantPanel()}
+        ${S.ti === 0 && !S.rolling ? `<button class="link" data-act="mode" data-v="">${t.changeMode}</button>` : ''}`;
+    } else {
+      body = `<div class="card center"><p class="scripture">${t.allIn}</p><p class="scripture">${COMBINE[LANG]}</p>
+        <button class="btn btn-primary" data-act="result">${t.seeResult}</button></div>`;
+    }
+    return `<section class="view">${prog(5)}<p class="muted small">${WRITE[LANG]}</p>${slots()}${body}</section>`;
+  },
+  result(){
+    const t = T();
+    return `<section class="view">${prog(6)}${falBlock(S.combo)}
+      <div class="actions"><button class="btn btn-primary" data-act="again">${t.again}</button>
+        <div class="row2"><button class="btn btn-ghost" data-act="go" data-v="browse">${t.browse}</button>
+        <button class="btn btn-ghost" data-act="home">${t.restart}</button></div></div>
+      ${closing()}</section>`;
+  },
+  browse(){
+    const t = T();
+    return `<section class="view"><button class="link back" data-act="go" data-v="home">← ${t.home}</button>
+      <div style="display:grid;gap:6px"><h2>${t.browseH}</h2><p class="muted">${t.browseSub}</p></div>
+      ${ORDER.map((a, i) => `<section class="pk"><div class="pk-head"><h3>${PK[i][LANG]}</h3><span class="src">${t.pages} ${PK[i].p}</span></div>
+        <div class="grid">${ORDER.map(b => ORDER.map(c => {
+          const code = a + b + c, ok = !!R[code];
+          return `<button class="chip${ok ? '' : ' missing'}" data-act="open" data-v="${code}" aria-label="${[a,b,c].map(x => LAT[x]).join(' ')}${ok ? '' : ' (' + UI.en.notPrinted + ')'}">
+            <span>${[a,b,c].map(x => LET[x]).join(' ')}</span>${ok ? '' : `<small>${t.notPrinted}</small>`}</button>`;
+        }).join('')).join('')}</div></section>`).join('')}
+    </section>`;
+  },
+  entry(){
+    const t = T();
+    return `<section class="view"><button class="link back" data-act="go" data-v="browse">← ${t.browseH}</button>${falBlock(S.combo)}</section>`;
+  }
+};
+
+function chantPanel(){
+  const t = T();
+  if (S.mode === 'namokar') {
+    return `<div class="card"><p class="eyebrow center">${t.chooseNamokar}</p>
+      <p class="mantra" lang="hi">${NAMOKAR.hi}</p>${LANG === 'en' ? `<p class="translit">${NAMOKAR.tr}</p>` : ''}
+      <p class="src center">${t.namokarNote}</p>
+      <button class="btn btn-primary" data-act="chanted">${t.namokarDone}</button></div>`;
+  }
+  const m = MANTRAS[S.ti];
+  return `<div class="card"><p class="eyebrow center">${t.mantraNames[S.ti]}</p>
+    <p class="mantra" lang="hi">${m.hi}</p>${LANG === 'en' ? `<p class="translit">${m.tr}</p>` : ''}
+    <p class="instr">${m.note[LANG]}</p>
+    <div class="beads" id="beads" aria-hidden="true">${Array.from({length:7}, (_, i) => `<i class="${i < S.count ? 'on' : ''}"></i>`).join('')}</div>
+    <button class="btn btn-primary" id="japBtn" data-act="jap">${t.japTap(S.count)}</button>
+    <button class="link" data-act="chanted">${t.japSkip}</button>
+    <p class="src center">${t.page} ${m.p}</p></div>`;
+}
+function throwPanel(){
+  const t = T();
+  if (S.own || !HAS_CRYPTO) {
+    return `<div class="card">${HAS_CRYPTO ? '' : `<p class="src center">${t.noRng}</p>`}<p class="scripture center">${t.whichUp}</p>
+      <div class="pick">${ORDER.map(c => `<button class="tile tile-btn" data-act="pick" data-v="${c}" aria-label="${LET[c]} (${LAT[c]})">${LET[c]}</button>`).join('')}</div>
+      ${HAS_CRYPTO ? `<button class="link" data-act="own" data-v="0">${t.virtualDie}</button>` : ''}</div>`;
+  }
+  return `<div class="card"><div class="stage">${dieHTML('die')}<div class="shadow" id="shadow"></div></div>
+    <p class="landed" id="landed" aria-live="polite"></p>
+    <button class="btn btn-primary" id="rollBtn" data-act="roll">${t.throwBtn}</button>
+    <p class="src center">${t.fair}</p>
+    <button class="link" data-act="own" data-v="1">${t.ownDie}</button></div>`;
+}
+
+/* ---------- Rendering ---------- */
+function paintHeader(){
+  document.documentElement.lang = LANG === 'hi' ? 'hi' : 'en';
+  $('#brand').textContent = T().brand;
+  $('#langHi').setAttribute('aria-pressed', String(LANG === 'hi'));
+  $('#langEn').setAttribute('aria-pressed', String(LANG === 'en'));
+}
+function render(){
+  paintHeader();
+  app.innerHTML = VIEWS[S.view]();
+  const die = document.getElementById('die');
+  if (die) die.style.transform = `rotateX(${S.angle}deg)`;
+  wake();
+}
+function go(v){
+  S.view = v; S.justGot = false;
+  render();
+  window.scrollTo({top:0, behavior: reduceMotion() ? 'auto' : 'smooth'});
+}
+function resetThrows(){
+  S.ti = 0; S.count = 0; S.chanted = false; S.letters = []; S.combo = null; S.rolling = false; S.justGot = false;
+}
+
+/* ---------- Die ---------- */
+/* Every draw takes fresh bytes from the browser's cryptographic random generator (crypto.getRandomValues).
+   Rejection sampling keeps each value exactly equally likely, and no throw depends on an earlier throw,
+   the time, or the animation. There is no weaker fallback: without the generator only a physical die is offered. */
+const HAS_CRYPTO = !!(window.crypto && typeof window.crypto.getRandomValues === 'function');
+function randInt(n){
+  const a = new Uint32Array(1), lim = Math.floor(0x100000000 / n) * n;
+  do { crypto.getRandomValues(a); } while (a[0] >= lim);
+  return a[0] % n;
+}
+function roll(){
+  if (S.rolling) return;
+  const die = document.getElementById('die');
+  if (!die) return;
+  S.rolling = true;
+  const btn = $('#rollBtn'), sh = $('#shadow'), landed = $('#landed');
+  btn.disabled = true; btn.textContent = T().rolling;
+  const k = randInt(4), code = ORDER[k];   // the outcome, drawn before any motion starts
+  const cur = S.angle;
+  // The motion only pictures the outcome; it gets its own random draws so no two tosses look alike.
+  const turns = 3 + randInt(3);
+  const end = cur + 360 * turns + ((((90 * k) - cur) % 360) + 360) % 360;
+  const lift = 80 + randInt(50), bounce = 18 + randInt(20);
+  const spinZ = (randInt(2) ? 1 : -1) * (12 + randInt(16));
+  const fast = reduceMotion();
+  const frames = fast
+    ? [{transform:`rotateX(${cur}deg)`}, {transform:`rotateX(${end}deg)`}]
+    : [
+        {transform:`translateY(-${lift}px) rotateZ(${spinZ}deg) rotateX(${cur}deg)`, offset:0},
+        {transform:`translateY(0) rotateZ(${-spinZ / 4}deg) rotateX(${end - 140}deg)`, offset:.55},
+        {transform:`translateY(-${bounce}px) rotateZ(${spinZ / 8}deg) rotateX(${end - 40}deg)`, offset:.72},
+        {transform:`translateY(0) rotateZ(${-spinZ / 20}deg) rotateX(${end + 6}deg)`, offset:.88},
+        {transform:`translateY(0) rotateZ(0deg) rotateX(${end}deg)`, offset:1}
+      ];
+  const dur = fast ? 250 : 1450 + randInt(500);
+  const anim = die.animate(frames, {duration:dur, easing:'cubic-bezier(.25,.6,.3,1)', fill:'forwards'});
+  if (sh && !fast) sh.animate([
+    {transform:'scale(.45)', opacity:.35, offset:0}, {transform:'scale(1)', opacity:1, offset:.55},
+    {transform:'scale(.8)', opacity:.7, offset:.72}, {transform:'scale(1)', opacity:1, offset:.88}, {transform:'scale(1)', opacity:1, offset:1}
+  ], {duration:dur, easing:'cubic-bezier(.25,.6,.3,1)'});
+  anim.onfinish = () => {
+    S.angle = end % 360;
+    die.style.transform = `rotateX(${S.angle}deg)`;
+    anim.cancel();
+    landed.textContent = T().gotLetter(LANG === 'hi' ? LET[code] : `${LET[code]} (${LAT[code]})`);
+    setTimeout(() => record(code), fast ? 500 : 1100);
+  };
+}
+function record(code){
+  S.letters.push(code);
+  S.ti++; S.count = 0; S.chanted = false; S.rolling = false; S.justGot = true;
+  render();
+  S.justGot = false;
+}
+
+/* ---------- Screen wake lock (optional) ---------- */
+let lock = null;
+async function wake(){
+  const want = S.view === 'dhyan' || S.view === 'ritual';
+  try {
+    if (want && !lock && navigator.wakeLock) {
+      lock = await navigator.wakeLock.request('screen');
+      lock.addEventListener('release', () => { lock = null; });
+    } else if (!want && lock) {
+      await lock.release(); lock = null;
+    }
+  } catch (e) { lock = null; }
+}
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') wake(); });
+
+/* ---------- Events ---------- */
+document.addEventListener('click', e => {
+  const el = e.target.closest('[data-act]');
+  if (!el) return;
+  const act = el.dataset.act, v = el.dataset.v;
+  if (act === 'lang') {
+    LANG = v;
+    try { localStorage.setItem('apk-lang', v); } catch (err) {}
+    if (S.rolling) { paintHeader(); return; }
+    render();
+    return;
+  }
+  if (S.rolling) return;
+  switch (act) {
+    case 'home': resetThrows(); S.mode = null; go('home'); break;
+    case 'go': go(v); break;
+    case 'start': resetThrows(); S.mode = null; S.prep = S.prep.map(() => false); go('intro'); break;
+    case 'mode': S.mode = v || null; S.count = 0; S.chanted = false; render(); break;
+    case 'jap': {
+      S.count = Math.min(7, S.count + 1);
+      if (S.count >= 7) { S.chanted = true; render(); break; }
+      const beads = document.querySelectorAll('#beads i');
+      beads.forEach((b, i) => b.classList.toggle('on', i < S.count));
+      $('#japBtn').textContent = T().japTap(S.count);
+      break;
+    }
+    case 'chanted': S.chanted = true; render(); break;
+    case 'roll': roll(); break;
+    case 'own': S.own = v === '1'; render(); break;
+    case 'pick': record(v); break;
+    case 'result': S.combo = S.letters.join(''); go('result'); break;
+    case 'again': resetThrows(); go('dhyan'); break;
+    case 'open': S.combo = v; go('entry'); break;
+  }
+});
+document.addEventListener('change', e => {
+  const el = e.target;
+  if (el.matches('[data-prep]')) S.prep[+el.dataset.prep] = el.checked;
+});
+
+/* ---------- Boot (keeps an in-progress ritual across page updates) ---------- */
+function start(data){
+  if (data && data.S) { Object.assign(S, data.S); S.rolling = false; S.justGot = false; }
+  if (data && (data.LANG === 'hi' || data.LANG === 'en')) LANG = data.LANG;
+  render();
+}
+try { window.claude?.hot?.snapshot?.(() => ({S:{...S, rolling:false}, LANG})); } catch (e) {}
+window.claude?.hot?.ready ? window.claude.hot.ready(start) : start(window.claude?.hot?.data ?? {});
+</script>
+</body>
+</html>
