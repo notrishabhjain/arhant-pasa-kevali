@@ -23,6 +23,7 @@ Open `http://localhost:3000`. No credentials are required: demo progress is stor
 ```bash
 pnpm test
 pnpm lint
+pnpm format:check
 pnpm typecheck
 pnpm build
 ```

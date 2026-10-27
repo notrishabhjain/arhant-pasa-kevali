@@ -1,11 +1,21 @@
 "use client";
 
 import { Chess, type Color, type Square } from "chess.js";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 const PIECES: Record<string, string> = {
-  wk: "♔", wq: "♕", wr: "♖", wb: "♗", wn: "♘", wp: "♙",
-  bk: "♚", bq: "♛", br: "♜", bb: "♝", bn: "♞", bp: "♟",
+  wk: "♔",
+  wq: "♕",
+  wr: "♖",
+  wb: "♗",
+  wn: "♘",
+  wp: "♙",
+  bk: "♚",
+  bq: "♛",
+  br: "♜",
+  bb: "♝",
+  bn: "♞",
+  bp: "♟",
 };
 
 type ChessboardProps = {
@@ -33,11 +43,14 @@ export function Chessboard({
   const [position, setPosition] = useState(fen);
   const [selected, setSelected] = useState<Square>();
   const [draggedSquare, setDraggedSquare] = useState<Square>();
+  const [prevFen, setPrevFen] = useState(fen);
 
-  useEffect(() => {
+  // Reset the board when the parent supplies a new position.
+  if (fen !== prevFen) {
+    setPrevFen(fen);
     setPosition(fen);
     setSelected(undefined);
-  }, [fen]);
+  }
 
   const game = useMemo(() => new Chess(position), [position]);
   const files = orientation === "w" ? WHITE_FILES : [...WHITE_FILES].reverse();
@@ -97,7 +110,10 @@ export function Chessboard({
             <button
               aria-label={`${square}${currentPiece ? ` ${currentPiece.color === "w" ? "white" : "black"} ${currentPiece.type}` : ""}`}
               className={`square ${isLight ? "light" : "dark"} ${selected === square ? "selected" : ""} ${legalSquares.includes(square) ? "legal" : ""} ${target === square ? "target" : ""}`}
-              draggable={interactive && Boolean(currentPiece && currentPiece.color === game.turn())}
+              draggable={
+                interactive &&
+                Boolean(currentPiece && currentPiece.color === game.turn())
+              }
               key={square}
               onClick={() => handleSquare(square)}
               onDragOver={(event) => event.preventDefault()}
@@ -106,7 +122,8 @@ export function Chessboard({
               role="gridcell"
               type="button"
             >
-              {currentPiece && PIECES[`${currentPiece.color}${currentPiece.type}`]}
+              {currentPiece &&
+                PIECES[`${currentPiece.color}${currentPiece.type}`]}
               {(showsRank || showsFile) && (
                 <span className="coord">
                   {showsRank ? rank : ""}

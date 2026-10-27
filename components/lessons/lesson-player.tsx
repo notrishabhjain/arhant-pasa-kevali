@@ -44,7 +44,11 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
         key={attemptVersion}
         onMove={(move) => answer(move)}
         onSquare={lesson.exercise.type === "square" ? answer : undefined}
-        target={feedback === "success" ? lesson.exercise.answer.split("-").at(-1) : undefined}
+        target={
+          feedback === "success"
+            ? lesson.exercise.answer.split("-").at(-1)
+            : undefined
+        }
       />
       <div className="card panel">
         <span className="tag">{lesson.topic}</span>
@@ -53,18 +57,45 @@ export function LessonPlayer({ lesson }: { lesson: Lesson }) {
         <h3>{pick(lesson.exercise.instruction, locale)}</h3>
         {feedback && (
           <div className={`feedback ${feedback === "error" ? "error" : ""}`}>
-            {pick(feedback === "success" ? lesson.exercise.success : lesson.exercise.error, locale)}
+            {pick(
+              feedback === "success"
+                ? lesson.exercise.success
+                : lesson.exercise.error,
+              locale,
+            )}
             <br />
             <small>{pick(lesson.exercise.explanation, locale)}</small>
           </div>
         )}
-        {hintVisible && <p className="hint">💡 {pick(lesson.exercise.hint, locale)}</p>}
-        {!feedback && <button className="button secondary" onClick={() => setHintVisible(true)} type="button">{t("hint", locale)}</button>}
-        {feedback === "error" && <button className="button secondary" onClick={() => setFeedback(null)} type="button">{locale === "en" ? "Try again" : "फिर कोशिश करें"}</button>}
+        {hintVisible && (
+          <p className="hint">💡 {pick(lesson.exercise.hint, locale)}</p>
+        )}
+        {!feedback && (
+          <button
+            className="button secondary"
+            onClick={() => setHintVisible(true)}
+            type="button"
+          >
+            {t("hint", locale)}
+          </button>
+        )}
+        {feedback === "error" && (
+          <button
+            className="button secondary"
+            onClick={() => setFeedback(null)}
+            type="button"
+          >
+            {locale === "en" ? "Try again" : "फिर कोशिश करें"}
+          </button>
+        )}
         {completed && (
           <div className="buttons">
-            <Link className="button" href="/progress">{locale === "en" ? "See progress" : "प्रगति देखें"}</Link>
-            <Link className="button secondary" href="/learn">{locale === "en" ? "All lessons" : "सभी पाठ"}</Link>
+            <Link className="button" href="/progress">
+              {locale === "en" ? "See progress" : "प्रगति देखें"}
+            </Link>
+            <Link className="button secondary" href="/learn">
+              {locale === "en" ? "All lessons" : "सभी पाठ"}
+            </Link>
           </div>
         )}
       </div>
